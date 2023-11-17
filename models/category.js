@@ -3,7 +3,8 @@ const Schema = mongoose.Schema;
 
 const categorySchema = new Schema ({
   name: { type: String, required: true},
-  sortOrder: Number
+  sortOrder: { type: Number, required: true },
+  subcategories: [{ type: String, required: true }],
 }, {
   timestamps: true
 });
