@@ -2,7 +2,7 @@
 
 # Eye Shop
 
-<img src='https://t4.ftcdn.net/jpg/02/73/55/33/360_F_273553300_sBBxIPpLSn5iC5vC8FwzFh6BJDKvUeaC.jpg'>
+<img src='https://media.istockphoto.com/id/1320345717/photo/various-cosmetic-accessories-for-makeup-and-manicure-on-trendy-pastel-pink-background-with.jpg?s=612x612&w=0&k=20&c=H35tfZdnHIBJLjXiX2Jfzoq32U8DrZEhZ__5l_05LsM='>
 
 ###### Created by Damaris Fregoso
 [![LinkedIn](https://img.shields.io/badge/Damaris-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/damaris-fregoso/) [![GitHub](https://img.shields.io/badge/Damaris-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/damarisfregoso)
