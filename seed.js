@@ -52,7 +52,7 @@ const Item = require('./models/item');
     },
     {
       name: 'Bite-Size Eyeshadow',
-      by: 'Elf', 
+      by: 'e.l.f Cosmetics', 
       images: [
         'https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw7a0e260f/2020/29922_OpenA_R.jpg?sfrm=png&sw=425&q=90'
       ], 
@@ -74,7 +74,7 @@ const Item = require('./models/item');
     },
     {
       name: 'Glossy Lip Stain', 
-      by: 'Elf',
+      by: 'e.l.f Cosmetics',
       images: [
         'https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw4d62e127/2021/81683_OpenA_R_Final.jpg?sfrm=png&sw=425&q=90'
       ], 
@@ -174,7 +174,7 @@ const Item = require('./models/item');
     },
     {
       name: 'Luminous Putty Blush',
-      by: 'Elf',
+      by: 'e.l.f Cosmetics',
       images: [
         'https://media.ulta.com/i/ulta/2601104?w=1036&h=1036'
       ], 
@@ -205,7 +205,124 @@ const Item = require('./models/item');
       price: 24.00, 
       info: 'A satiny-pink liquid highlighter that accents cheek and brow bones for a dewy glow.'
     },
-
+    {
+      name: 'Pressed Powder Highlighter', 
+      by: 'ColourPop',
+      image: [
+        'https://media.ulta.com/i/ulta/2609265?w=1250&h=1250',
+        'https://media.ulta.com/i/ulta/2609265_sm?w=1250&h=1250'
+      ], 
+      category: categories[40], 
+      subcategories: 'Powder',
+      price: 12.00, 
+      info: 'A silky, buttery soft formula that effortlessly blends onto skin for a radiant glow.'
+    },
+    {
+      name: 'Positive Light Silky Touch Highlighter', 
+      by: 'Rare Beauty',
+      image: [
+        'https://www.sephora.com/productimages/sku/s2629509-main-zoom.jpg?imwidth=630',
+        'https://www.sephora.com/productimages/sku/s2629509-av-2-zoom.jpg?imwidth=630'
+      ], 
+      category: categories[40], 
+      subcategories: 'Powder',
+      price: 25.00, 
+      info: 'An innovative powder highlighter that gives skin an instant glass-like sheen for an easy, natural-looking glow that lasts.'
+    },
+    {
+      name: 'Essentail Eyeshadow Brush',
+      by: 'Wet n Wild', 
+      image: [
+        'https://media.ulta.com/i/ulta/2589842?w=1250&h=1250',
+        'https://media.ulta.com/i/ulta/2589842cm_alt02?w=1250&h=1250',
+        'https://media.ulta.com/i/ulta/2589842cm_alt01?w=1250&h=1250'
+      ], 
+      category: categories[50], 
+      price: 1.69, 
+      info: 'Ultra-plush synthetic fibers that pick up and distribute powder pigment effortlessly, along with handles designed for the utmost precision.'
+    },    
+    {
+      name: 'Beautifully Percise Eyeshadow Brush', 
+      by: 'e.l.f Cosmetics',
+      image: [
+        'https://media.ulta.com/i/ulta/2524646?w=1250&h=1250',
+        'https://media.ulta.com/i/ulta/2524646cm_alt01?w=1250&h=1250'
+      ], 
+      category: categories[50], 
+      price: 6.00, 
+      info: 'A slightly tapered medium sized eyeshadow brush for flawlessly applying color to the eye.'
+    },    
+    {
+      name: 'Blush Brush', 
+      by: 'Youthforia',
+      image: [
+        'https://media.ulta.com/i/ulta/2602249?w=1250&h=1250'
+      ], 
+      category: categories[50], 
+      price: 18.00, 
+      info: 'The dense synthetic bristles allows for precision of color, yet is soft and gentle enough for sensitive skin.'
+    },    
+    {
+      name: 'Soft Pinch Blush Brush', 
+      by: 'Rare Beauty',
+      image: [
+        'https://www.sephora.com/productimages/sku/s2518942-main-zoom.jpg?imwidth=630'
+      ], 
+      category: categories[50], 
+      price: 23.00, 
+      info: 'A feathery soft blush brush that blends pigment-rich formulas with ease—ideal for applying liquids and creams for a soft diffused finish.'
+    },    
+    {
+      name: 'Dual Ended Blush Brush', 
+      by: 'Patrick Ta',
+      image: [
+        'https://www.sephora.com/productimages/sku/s2711653-main-zoom.jpg?imwidth=630'
+      ], 
+      category: categories[50], 
+      price: 45.00, 
+      info: 'A dual-ended blush brush that applies both cream and powder with ease for a diffused and glowy look.'
+    },
+    {
+      name: 'Putty Blush Brush', 
+      by: 'e.l.f Cosmetics',
+      image: [
+        'https://media.ulta.com/i/ulta/2574608?w=1250&h=1250'
+      ], 
+      category: categories[50], 
+      price: 5.00, 
+      info: 'A velvety, lightweight putty blush that melts into your skin.'
+    },
+    {
+      name: 'Fan Highlight Brush #23', 
+      by: 'ULTA Beauty Collection',
+      image: [
+        'https://media.ulta.com/i/ulta/2601763?w=1250&h=1250'
+      ], 
+      category: categories[50], 
+      price: 14.00, 
+      info: 'For a glowy, light touch of radiance.'
+    },
+    {
+      name: 'Cheek-Hugging Highlight Brush 120', 
+      by: 'FENTY BEAUTY by Rihanna',
+      image: [
+        'https://media.ulta.com/i/ulta/2592260?w=1890&h=1890'
+      ], 
+      category: categories[50], 
+      price: 32.00, 
+      info: 'An expertly chiseled highlight brush that hugs cheeks for an effortless glow.'
+    },
+    {
+      name: 'Highlighting Brush', 
+      by: 'e.l.f Cosmetics',
+      image: [
+        'hhttps://media.ulta.com/i/ulta/2506980?w=1250&h=1250',
+        'https://media.ulta.com/i/ulta/2506980cm_alt01?w=1250&h=1250'
+      ], 
+      category: categories[50], 
+      price: 5.00, 
+      info: 'An expertly chiseled highlight brush that hugs cheeks for an effortless glow.'
+    },
   ]);
 
   console.log(items)
