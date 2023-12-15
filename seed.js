@@ -12,6 +12,7 @@ const Item = require('./models/item');
     {name: 'Blushes', sortOrder: 30, subcategories: ['Liquid', 'Powder', 'Stick', 'Putty', 'All']},
     {name: 'Highlighters', sortOrder: 40, subcategories: ['Liquid', 'Powder', 'Show All']},
     {name: 'Brushes', sortOrder: 50 },
+    {name: 'Moisturizer', sortOrder: 60, subcategories: ['Clear', 'Tinted', 'Show All']},
   ]);
 
   await Item.deleteMany({});
@@ -333,6 +334,52 @@ const Item = require('./models/item');
       category: categories[4], 
       price: 5.00, 
       info: 'An expertly chiseled highlight brush that hugs cheeks for an effortless glow.'
+    },
+    {
+      name: 'Moisturizer', 
+      by: 'La Roche-Posay',
+      images: [
+        'https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/510baNnaJ3L._SX466_.jpg'
+      ], 
+      category: categories[5], 
+      subcategories:'Clear', 
+      price: 19.99, 
+      info: 'Body, face and hand moisturizing cream for dry & extra dry skin, providing lasting 48hr hydration.'
+    },
+    {
+      name: 'Daily Moisturizing Lotion', 
+      by: 'CeraVe',
+      images: [
+        'https://target.scene7.com/is/image/Target/GUEST_8f8ebc29-3de2-42d2-8354-6090f582bb13?wid=600&hei=600&qlt=80&fmt=webp'
+      ], 
+      category: categories[5], 
+      subcategories:'Clear', 
+      price: 19.99, 
+      info: 'Body, face and hand moisturizing cream for dry & extra dry skin, providing lasting 48hr hydration.'
+    },
+    {
+      name: 'Positive Light Tinted Broad Spectrum SPF 20 Sunscreen', 
+      by: 'Rare Beauty',
+      images: [
+        'https://www.sephora.com/productimages/sku/s2557171-main-zoom.jpg?imwidth=315',
+        'https://www.sephora.com/productimages/sku/s2557171-av-5-zoom.jpg?imwidth=315'
+      ], 
+      category: categories[5], 
+      subcategories:'Tinted', 
+      price: 30.00, 
+      info: 'A flexible tinted moisturizer that immediately blurs skin with glowy, light to medium coverage, all while hydrating and protecting skin from the sun.'
+    },
+    {
+      name: 'Slip Tint - Lightweight Tinted Moisturizer with Mineral Zinc SPF 35 and Hyaluronic', 
+      by: 'Saie',
+      images: [
+        'https://www.sephora.com/productimages/sku/s2486496-main-zoom.jpg?imwidth=315',
+        'https://www.sephora.com/productimages/sku/s2486496-av-02-zoom.jpg?imwidth=315'
+      ], 
+      category: categories[5], 
+      subcategories:'Tinted', 
+      price: 36.00, 
+      info: 'A lightweight tinted moisturizer with 100% non-nano mineral zinc oxide broad spectrum SPF 35 and packed with a blend of nourishing and hydrating ingredients for sheer, dewy coverage.'
     },
   ]);
 
