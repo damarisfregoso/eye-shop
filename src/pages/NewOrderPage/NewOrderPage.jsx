@@ -3,7 +3,7 @@ import * as itemsAPI from '../../utilities/items-api';
 import './NewOrderPage.css'
 import { Link } from 'react-router-dom';
 import Logo from '../../components/Logo/Logo';
-import MakeupList from '../../components/MakeupList/MakeupList';
+import MakeupListPage from '../../components/MakeupListPage/MakeupListPage';
 import CategoryList from '../../components/CategoryList/CategoryList';
 import OrderDetail from '../../components/OrderDetail/OrderDetail';
 import UserLogOut from '../../components/UserLogOut/UserLogOut';
@@ -19,6 +19,7 @@ export default function NewOrderPage( user, setUser) {
       const items = await itemsAPI.getAll();
       categoriesRef.current = [...new Set (items.map(item => item.category.name))];
       setMakeupItems(items);
+      setActiveCat(categoriesRef.current[0])
     }
     getItems();
   }, []);
@@ -36,7 +37,7 @@ export default function NewOrderPage( user, setUser) {
     <UserLogOut user={user} setUser={setUser} />
   </aside>
   <MenuList
-    menuItems={menuItems.filter(item => item.category.name === activeCat)}
+    makeupItems={makeupItems.filter(item => item.category.name === activeCat)}
   />
   <OrderDetail />
 </main>
