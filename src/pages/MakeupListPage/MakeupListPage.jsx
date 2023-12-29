@@ -1,11 +1,11 @@
 import './MakeupListPage.css';
 import MenuListItem from '../../components/MenuListItem/MenuListItem';
 
-export default function MenuList({ menuItems, handleAddToOrder }) {
-  const items = menuItems.map(item =>
+export default function MenuList({ makeupItems, handleAddToOrder }) {
+  const items = makeupItems.map(item =>
     <MenuListItem
       key={item._id}
-      menuItem={item}
+      makeupItems={item}
       handleAddToOrder={handleAddToOrder}
     />
   );

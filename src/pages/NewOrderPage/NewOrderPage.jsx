@@ -6,9 +6,8 @@ import MakeupListPage from '../MakeupListPage/MakeupListPage';
 import CategoryList from '../../components/CategoryList/CategoryList';
 import OrderDetail from '../../components/OrderDetail/OrderDetail';
 
-export default function NewOrderPage( user, setUser) {
+export default function NewOrderPage( user, setUser, makeupItems, setMakeupItems) {
 
-  const [makeupItems, setMakeupItems] = useState([]);
   const [activeCat, setActiveCat] = useState('');
   const categoriesRef = useRef([]);
 
@@ -33,7 +32,7 @@ export default function NewOrderPage( user, setUser) {
     <Link to="/orders" className="button btn-sm">PREVIOUS ORDERS</Link>
   </aside>
   <MakeupListPage
-    makeupItems={makeupItems.filter(item => item.category.name === activeCat)}
+    makeupItems={makeupItems} setMakeupItems={setMakeupItems}
   />
   <OrderDetail />
 </main>
