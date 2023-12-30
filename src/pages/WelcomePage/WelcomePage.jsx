@@ -1,4 +1,8 @@
-export default function WelcomePage() {
+export default function WelcomePage({user}) {
 
-  return
+  return (
+    <div>
+      <h1>Welcome {user.name}</h1>
+    </div>
+  )
 }
