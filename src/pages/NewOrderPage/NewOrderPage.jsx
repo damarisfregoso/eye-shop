@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import * as itemsAPI from '../../utilities/items-api';
 import './NewOrderPage.css'
 import { Link } from 'react-router-dom';
-import MakeupListPage from '../MakeupListPage/MakeupListPage';
 import CategoryList from '../../components/CategoryList/CategoryList';
 import OrderDetail from '../../components/OrderDetail/OrderDetail';
 
@@ -23,17 +22,14 @@ export default function NewOrderPage( user, setUser, makeupItems, setMakeupItems
 
   return (
     <main className="NewOrderPage">
-  <aside>
-    <CategoryList
-      categories={categoriesRef.current}
-      activeCat={activeCat}
-      setActiveCat={setActiveCat}
-    />
-    <Link to="/orders" className="button btn-sm">PREVIOUS ORDERS</Link>
-  </aside>
-  <MakeupListPage
-    makeupItems={makeupItems} setMakeupItems={setMakeupItems}
-  />
+      <h1>Hello world</h1>
+      <aside>
+        <CategoryList
+          categories={categoriesRef.current}
+          activeCat={activeCat}
+          setActiveCat={setActiveCat}
+        />
+      </aside>
   <OrderDetail />
 </main>
   );

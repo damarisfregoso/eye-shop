@@ -21,7 +21,7 @@ export default function App() {
             <Routes>
               {/* Route components in here */}
               <Route path="/" element={<WelcomePage user={user}/>} />
-              <Route path="/orders/new" element={<NewOrderPage user={user} setUser={setUser} makeupItems={makeupItems.filter(item => item.category.name === activeCat)} setMakeupItems/>} />
+              <Route path="/orders/new" element={<NewOrderPage user={user} setUser={setUser} />} />
               <Route path="/orders" element={<OrderHistoryPage />} />
             </Routes>
           </>
