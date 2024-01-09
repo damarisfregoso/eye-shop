@@ -18,7 +18,7 @@ export default function App() {
             <NavBar user={user} setUser={setUser} />
             <Routes>
               {/* Route components in here */}
-              <Route path="/orders/new" element={<WelcomePage user={user} setUser={setUser} />} />
+              <Route path="/" element={<WelcomePage user={user} setUser={setUser} />} />
               <Route path="/orders" element={<OrderHistoryPage />} />
             </Routes>
           </>
