@@ -1,13 +1,7 @@
 /* CSS Custom Properties */
 :root {
-  --white: #FFFFFF;
-  --tan-1: #FBF9F6;
-  --tan-2: #E7E2DD;
-  --tan-3: #E2D9D1;
-  --tan-4: #D3C1AE;
-  --orange: #F67F00;
-  --text-light: #968c84;
-  --text-dark: #615954;
+  --background-color: #ffffff;
+  --text-color: #ff77b0;
 }
 
 *, *:before, *:after {
@@ -15,15 +9,21 @@
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: var(--tan-4);
+  /* margin: 0;
   padding: 2vmin;
-  height: 100vh;
+  height: 100vh; */
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+:root {
+  --background-color: #1a1a1a;
+  --text-color: #ff77b0;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 code {
