@@ -1,7 +1,16 @@
 /* CSS Custom Properties */
 :root {
-  --background-color: #ffffff;
-  --text-color: #ff77b0;
+  --body_background: #ffffff;
+  --body_color: #ff77b0;
+}
+
+[data-theme="dark"] {
+  --body_background: #1a1a1a;
+  --body_color: #ff77b0;
+}
+
+* {
+  transition: all 0.3s ease-in-out;
 }
 
 *, *:before, *:after {
@@ -9,22 +18,13 @@
 }
 
 body {
-  /* margin: 0;
+  margin: 0;
   padding: 2vmin;
-  height: 100vh; */
-  background-color: var(--background-color);
-  color: var(--text-color);
+  height: 100vh;
+  background-color: var(--body_background);
+  color: var(--body_color);
 }
 
-:root {
-  --background-color: #1a1a1a;
-  --text-color: #ff77b0;
-}
-
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
