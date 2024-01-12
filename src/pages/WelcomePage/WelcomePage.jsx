@@ -1,11 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import * as itemsAPI from '../../utilities/items-api';
-import DarkMode from "../../components/DarkMode/DarkMode";
+import CategoryList from "../../components/CategoryList/CategoryList";
+
 
 export default function WelcomePage({ user, setUser, makeupItems, setMakeupItems }) {
   const [activeCat, setActiveCat] = useState('');
   const [categoryInfo, setCategoryInfo] = useState({});
-
   const categoriesRef = useRef([]);
 
   useEffect(() => {
@@ -33,13 +33,13 @@ export default function WelcomePage({ user, setUser, makeupItems, setMakeupItems
 
   return (
     <main className="WelcomePage">
-      <h1>Welcome to Eye Shop, get all the goodies here.</h1>
-      <DarkMode />
-      {/* <CategoryList
+      {user ? (<h1>Shop all the goodies below	&darr;</h1>) : ( <h1>Welcome to Eye Shop, Explore all the goodies below	&darr;</h1> ) }
+      
+      <CategoryList
         categories={categoriesRef.current}
         activeCat={activeCat}
         setActiveCat={setActiveCat}
-      /> */}
+      />
 
       {categoriesRef.current.map(category => (
         <div key={category}>
