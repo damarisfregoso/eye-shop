@@ -2,6 +2,7 @@
 :root {
   --body_background: #ffffff;
   --body_color: #ff77b0;
+  --bright_pink: rgb(255, 77, 106);  
 }
 
 [data-theme="dark"] {
@@ -23,6 +24,7 @@ body {
   height: 100vh;
   background-color: var(--body_background);
   color: var(--body_color);
+  font-family: 'DM Sans', sans-serif;
 }
 
 

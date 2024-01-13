@@ -12,7 +12,7 @@ const Item = require('./models/item');
     {name: 'Blushes', sortOrder: 30, subcategories: ['Liquid', 'Powder', 'Stick', 'Putty', 'All']},
     {name: 'Highlighters', sortOrder: 40, subcategories: ['Liquid', 'Powder', 'Show All']},
     {name: 'Brushes', sortOrder: 50 },
-    {name: 'Moisturizer', sortOrder: 60, subcategories: ['Clear', 'Tinted', 'Show All']},
+    {name: 'Moisturizers', sortOrder: 60, subcategories: ['Clear', 'Tinted', 'Show All']},
   ]);
 
   await Item.deleteMany({});
@@ -336,7 +336,7 @@ const Item = require('./models/item');
       info: 'An expertly chiseled highlight brush that hugs cheeks for an effortless glow.'
     },
     {
-      name: 'Moisturizer', 
+      name: 'Moisturizers', 
       by: 'La Roche-Posay',
       images: [
         'https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/510baNnaJ3L._SX466_.jpg'
@@ -367,10 +367,10 @@ const Item = require('./models/item');
       category: categories[5], 
       subcategories:'Tinted', 
       price: 30.00, 
-      info: 'A flexible tinted moisturizer that immediately blurs skin with glowy, light to medium coverage, all while hydrating and protecting skin from the sun.'
+      info: 'A flexible tinted moisturizers that immediately blurs skin with glowy, light to medium coverage, all while hydrating and protecting skin from the sun.'
     },
     {
-      name: 'Slip Tint - Lightweight Tinted Moisturizer with Mineral Zinc SPF 35 and Hyaluronic', 
+      name: 'Slip Tint - Lightweight Tinted Moisturizers with Mineral Zinc SPF 35 and Hyaluronic', 
       by: 'Saie',
       images: [
         'https://www.sephora.com/productimages/sku/s2486496-main-zoom.jpg?imwidth=315',
@@ -379,7 +379,7 @@ const Item = require('./models/item');
       category: categories[5], 
       subcategories:'Tinted', 
       price: 36.00, 
-      info: 'A lightweight tinted moisturizer with 100% non-nano mineral zinc oxide broad spectrum SPF 35 and packed with a blend of nourishing and hydrating ingredients for sheer, dewy coverage.'
+      info: 'A lightweight tinted moisturizers with 100% non-nano mineral zinc oxide broad spectrum SPF 35 and packed with a blend of nourishing and hydrating ingredients for sheer, dewy coverage.'
     },
   ]);
 

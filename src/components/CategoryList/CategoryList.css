@@ -1,0 +1,25 @@
+.CategoryList {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  border: 2px pink solid;
+  font-size: 20px;
+}
+
+.CategoryList li {
+  padding: .6vmin;
+  text-align: center;
+  border-radius: .5vmin;
+  margin-bottom: .5vmin;
+}
+    
+.CategoryList li:hover:not(.active) {
+  cursor: pointer;
+  color: var(--body_color);
+}
+
+.CategoryList li.active {
+  color: var(--bright_pink);
+  border: .1vmin solid var(--tan-3);
+  font-weight: 900;
+}

@@ -1,0 +1,35 @@
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; /* Adjust padding as needed */
+}
+
+.NavBar span {
+  display: flex;
+  align-items: center;
+}
+
+.DarkMode {
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+.NavBar a {
+  margin-right: 10px; /* Adjust margin between links as needed */
+  color: var(--body_color);
+  text-decoration: none;
+}
+
+.NavBar a:hover {
+  color: #555; /* Set the link color on hover */
+}
+
+.NavBar span span {
+  margin-left: 10px; /* Adjust margin between user info and logout as needed */
+}
+
+.NavBar a.activeLink {
+  color: var(--bright_pink);
+  font-weight: bold; /* Optionally, add other styling for active links */
+  text-decoration: underline; /* Add underline for active links */
+}

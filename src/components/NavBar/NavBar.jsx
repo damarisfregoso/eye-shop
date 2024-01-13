@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import * as userService from '../../utilities/users-service';
 import DarkMode from '../DarkMode/DarkMode';
+import './NavBar.css'
 
 export default function NavBar({ user, setUser }) {
   function handleLogOut() {
@@ -9,14 +10,26 @@ export default function NavBar({ user, setUser }) {
   }
 
   return (
-    <nav>
+    <nav className='NavBar'>
       <DarkMode />
-      <Link to="/orders">Order History</Link>
-      &nbsp; | &nbsp;
-      <Link to="/orders/new">New Order</Link>
-      &nbsp;&nbsp;
-      <span>Welcome, {user.name}</span>
-      &nbsp;&nbsp;<Link to="" onClick={handleLogOut}>Log Out</Link>
+      <span>
+        <NavLink exact to="/" activeClassName="activeLink">
+          Eye Shop
+        </NavLink>
+        &nbsp; | &nbsp;
+        <NavLink to="/purchases" activeClassName="activeLink">
+          Purchases
+        </NavLink>
+        &nbsp; | &nbsp;
+        <NavLink to="/cart" activeClassName="activeLink">
+          Cart
+        </NavLink>
+        &nbsp;&nbsp;
+        <span>Welcome, {user.name}</span>
+        &nbsp;&nbsp;<NavLink to="" onClick={handleLogOut} activeClassName="activeLink">
+          Log Out
+        </NavLink>
+      </span>
     </nav>
   );
 }

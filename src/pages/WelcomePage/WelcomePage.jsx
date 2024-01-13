@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import * as itemsAPI from '../../utilities/items-api';
 import CategoryList from "../../components/CategoryList/CategoryList";
+import './WelcomePage.css';
 
 
 export default function WelcomePage({ user, setUser, makeupItems, setMakeupItems }) {
@@ -45,9 +46,9 @@ export default function WelcomePage({ user, setUser, makeupItems, setMakeupItems
         <div key={category}>
           <h2>{category}</h2>
           {categoryInfo[category] && (
-            <div>
-              <img src={categoryInfo[category].image} alt={`Random ${category} Image`} />
-              <p>{categoryInfo[category].info}</p>
+            <div className="Category-Box">
+              <img className="Box" src={categoryInfo[category].image} alt={`Random ${category} Image`} />
+              <p className="Box">{categoryInfo[category].info}</p>
             </div>
           )}
         </div>
