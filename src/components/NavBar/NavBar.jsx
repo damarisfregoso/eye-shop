@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import * as userService from '../../utilities/users-service';
 import DarkMode from '../DarkMode/DarkMode';
 import './NavBar.css'
@@ -13,22 +13,29 @@ export default function NavBar({ user, setUser }) {
     <nav className='NavBar'>
       <DarkMode />
       <span>
-        <NavLink exact to="/" activeClassName="activeLink">
+        <Link to="/" >
           Eye Shop
-        </NavLink>
+        </Link>
         &nbsp; | &nbsp;
-        <NavLink to="/purchases" activeClassName="activeLink">
+        <Link to="/purchases" >
           Purchases
-        </NavLink>
+        </Link>
         &nbsp; | &nbsp;
-        <NavLink to="/cart" activeClassName="activeLink">
+        <Link to="/cart" >
           Cart
-        </NavLink>
+        </Link>
         &nbsp;&nbsp;
-        <span>Welcome, {user.name}</span>
-        &nbsp;&nbsp;<NavLink to="" onClick={handleLogOut} activeClassName="activeLink">
-          Log Out
-        </NavLink>
+        {user ? 
+        <>       
+          <span>Welcome, {user.name}</span>
+          &nbsp;&nbsp;<Link to="" onClick={handleLogOut} >
+            Log Out
+          </Link> 
+        </> 
+        :
+        <Link to='/login'>Human</Link>
+      }
+
       </span>
     </nav>
   );

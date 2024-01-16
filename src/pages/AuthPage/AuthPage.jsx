@@ -6,7 +6,7 @@ import './AuthPage.css'
 export default function AuthPage({ setUser }) {
   const [showSignUp, setShowSignUp] = useState(false);
   return (
-    <main>
+    <main className='AuthPage'>
       <h1>Log in to get all the EYE SHOP goodies!</h1>
       { showSignUp ?
           <SignUpForm setUser={setUser} />
