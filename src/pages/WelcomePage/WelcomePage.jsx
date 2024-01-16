@@ -44,11 +44,15 @@ export default function WelcomePage({ user, setUser, makeupItems, setMakeupItems
 
       {categoriesRef.current.map(category => (
         <div key={category}>
-          <h2>{category}</h2>
+        <h2>{category}</h2>
           {categoryInfo[category] && (
             <div className="Category-Box">
-              <img className="Box" src={categoryInfo[category].image} alt={`Random ${category} Image`} />
-              <p className="Box">{categoryInfo[category].info}</p>
+              <div className="Box">
+                <img src={categoryInfo[category].image} alt={`Random ${category} Image`} />
+              </div>
+              <div className="Box">
+                <p>{categoryInfo[category].info}</p>
+              </div>
             </div>
           )}
         </div>
