@@ -24,6 +24,7 @@ export default function WelcomePage({ user, setUser, makeupItems, setMakeupItems
         categoryInfoMap[category] = {
           image: randomItem.images[0], // Assuming each item has an array of images
           info: randomItem.info,
+          name: randomItem.name,
         };
       });
 
@@ -47,10 +48,11 @@ export default function WelcomePage({ user, setUser, makeupItems, setMakeupItems
         <h2>{category}</h2>
           {categoryInfo[category] && (
             <div className="Category-Box">
-              <div className="Box">
+              <div className="Box-1">
                 <img src={categoryInfo[category].image} alt={`Random ${category} Image`} />
               </div>
-              <div className="Box">
+              <div className="Box-2">
+                <h1>{categoryInfo[category].name}</h1>
                 <p>{categoryInfo[category].info}</p>
               </div>
             </div>

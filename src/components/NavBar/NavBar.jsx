@@ -24,7 +24,7 @@ export default function NavBar({ user, setUser }) {
         <Link to="/cart" >
           Cart
         </Link>
-        &nbsp;&nbsp;
+        &nbsp; | &nbsp;
         {user ? 
         <>       
           <span>Welcome, {user.name}</span>
@@ -33,7 +33,7 @@ export default function NavBar({ user, setUser }) {
           </Link> 
         </> 
         :
-        <Link to='/login'>Human</Link>
+        <Link to='/login'>Sign In</Link>
       }
 
       </span>

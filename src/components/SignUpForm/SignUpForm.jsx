@@ -1,7 +1,10 @@
 import { Component } from 'react';
 import { signUp } from '../../utilities/users-service';
+import { withRouter } from 'react-router-dom';
 
-export default class SignUpForm extends Component {
+
+
+class SignUpForm extends Component {
   state = {
     name: '',
     email: '',
@@ -27,6 +30,8 @@ export default class SignUpForm extends Component {
       // in the payload of the JSON Web Token (JWT)
       const user = await signUp(formData);
       this.props.setUser(user);
+      console.log('Navigating to /');
+      this.props.history.push('/');
     } catch {
       // An error occurred
       // Probably due to a duplicate email
@@ -56,3 +61,5 @@ export default class SignUpForm extends Component {
     );
   }
 }
+
+export default withRouter(SignUpForm);
