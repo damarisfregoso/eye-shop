@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './CategoryList.css';
 
 export default function CategoryList({ categories, activeCat, setActiveCat }) {
@@ -7,7 +8,7 @@ export default function CategoryList({ categories, activeCat, setActiveCat }) {
       className={cat === activeCat ? 'active' : ''}
       onClick={() => setActiveCat(cat)}
     >
-      {cat}
+      <Link to={`/category/${cat}`}>{cat}</Link>
     </li>
   );
   return (
