@@ -1,15 +1,16 @@
 import './MakeupListItem.css';
 
-export default function MakeupListItem({ makeupItem, handleAddToOrder }) {
+export default function MakeupListItem({ makeupItem }) {
   return (
     <div className="MakeupListItem">
-      <div className="emoji flex-ctr-ctr">{makeupItem.emoji}</div>
-      <div className="name">{makeupItem.name}</div>
+      <div>{makeupItem.name}</div>
+      <div className="name">{makeupItem.by}</div>
+      <div className='image'>
+        <img src={makeupItem.images} alt="{makeupItem.name}" />
+        </div>
+      <div className='info'>{makeupItem.info}</div>
       <div className="buy">
         <span>${makeupItem.price.toFixed(2)}</span>
-        <button className="btn-sm" onClick={() => handleAddToOrder(makeupItem._id)}>
-          ADD
-        </button>
       </div>
     </div>
   );
