@@ -3,15 +3,11 @@ import './MakeupListItem.css';
 export default function MakeupListItem({ makeupItem }) {
   return (
     <div className="MakeupListItem">
-      <div>{makeupItem.name}</div>
-      <div className="name">{makeupItem.by}</div>
-      <div className='image'>
+      <h1>{makeupItem.name}</h1>
+        <h4 className="name">{makeupItem.by}</h4>
         <img src={makeupItem.images} alt="{makeupItem.name}" />
-        </div>
-      <div className='info'>{makeupItem.info}</div>
-      <div className="buy">
+        <p className='info'>{makeupItem.info}</p>
         <span>${makeupItem.price.toFixed(2)}</span>
-      </div>
     </div>
   );
 }

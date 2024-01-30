@@ -2,9 +2,11 @@ import { useParams } from "react-router-dom"
 import CategoryList from "../../components/CategoryList/CategoryList";
 import MakeupList from "../../components/MakeupList/MakeupList";
 
+
 export default function CategoryPage({ makeupItems, activeCat, setActiveCat, categoriesRef}) {
 
   const { cat } = useParams();
+  const filteredMakeupItems = makeupItems.filter(item => item.category.name === cat);
 
   return(
   <>
@@ -14,11 +16,9 @@ export default function CategoryPage({ makeupItems, activeCat, setActiveCat, cat
         activeCat={activeCat}
         setActiveCat={setActiveCat}
       />
-  <div className="CategoryPage">
-    <MakeupList
-      makeupItems={makeupItems.filter(item => item.category.name === activeCat)}
-    />
-  </div>
+      <div className="CategoryPage">
+        <MakeupList makeupItems={filteredMakeupItems} />
+      </div>
   </>
   
   )
