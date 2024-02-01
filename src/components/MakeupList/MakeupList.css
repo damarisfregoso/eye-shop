@@ -1,6 +1,10 @@
-container-fluid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.MakeupList {
+display: flex;
+flex-wrap: wrap;
+}
+
+.ListItem {
+background-color: grey;
+margin: 10px;
 }
 

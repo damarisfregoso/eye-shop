@@ -1,13 +1,16 @@
 .MakeupListItem {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-  height: 1fr;
+  width: 350px;
 }
 
 .MakeupListItem img{
-  height: 400px;
-  width: 400px;
+  height: 200px;
+  width: 200px;
   display: flex;
   align-items: center;
 }
+
+/* .MakeupListItem */

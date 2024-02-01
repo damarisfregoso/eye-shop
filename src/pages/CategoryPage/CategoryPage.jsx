@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom"
 import CategoryList from "../../components/CategoryList/CategoryList";
 import MakeupList from "../../components/MakeupList/MakeupList";
+import './CategoryPage.css'
 
 
 export default function CategoryPage({ makeupItems, activeCat, setActiveCat, categoriesRef}) {
