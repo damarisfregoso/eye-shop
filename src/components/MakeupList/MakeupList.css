@@ -1,10 +1,17 @@
 .MakeupList {
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
+align-items: center;
 }
 
 .ListItem {
-background-color: grey;
 margin: 10px;
+border: 2px solid white;
+display: flex;
+align-items: center;
 }
 
+.MakeupList h4 {
+  text-align: left;
+}

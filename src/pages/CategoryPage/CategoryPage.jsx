@@ -10,17 +10,18 @@ export default function CategoryPage({ makeupItems, activeCat, setActiveCat, cat
   const filteredMakeupItems = makeupItems.filter(item => item.category.name === cat);
 
   return(
-  <>
-  <h1>Shop { cat }</h1>
-  <CategoryList
-        categories={categoriesRef.current}
-        activeCat={activeCat}
-        setActiveCat={setActiveCat}
-      />
-      <div className="CategoryPage">
-        <MakeupList makeupItems={filteredMakeupItems} />
-      </div>
-  </>
+  <div className="CategoryPage">
+    <h1>Shop { cat }</h1>
+    <CategoryList
+          categories={categoriesRef.current}
+          activeCat={activeCat}
+          setActiveCat={setActiveCat}
+        />
+    <section>
+      <MakeupList makeupItems={filteredMakeupItems} />
+    </section>
+</div>
+
   
   )
 }

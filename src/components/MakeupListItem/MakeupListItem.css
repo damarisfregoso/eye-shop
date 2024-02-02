@@ -3,14 +3,17 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 350px;
+  width: 410px;
+  height: 500px;
 }
 
 .MakeupListItem img{
-  height: 200px;
-  width: 200px;
+  height: 230px;
+  width: 230px;
   display: flex;
   align-items: center;
 }
 
-/* .MakeupListItem */
+.price {
+  color: rgb(146, 255, 146);
+}
