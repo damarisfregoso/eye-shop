@@ -4,6 +4,7 @@ import { getUser } from '../../utilities/users-service';
 import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
 import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
+import MakeupItemDetailPage from '../MakeupItemDetailPage/MakeupItemDetailPage';
 import NavBar from '../../components/NavBar/NavBar';
 import WelcomePage from '../WelcomePage/WelcomePage';
 import CategoryPage from '../CategoryPage/CategoryPage';
@@ -70,6 +71,7 @@ export default function App() {
         setActiveCat={setActiveCat}
         categoriesRef={categoriesRef}
         />}/>
+        <Route path="/makeup/:item" element={<MakeupItemDetailPage makeupItems={makeupItems}/>}/>
       </Routes>
     </main>
   );
