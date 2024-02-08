@@ -1,4 +1,5 @@
 import './MakeupList.css';
+import { Link } from 'react-router-dom';
 import MakeupListItem from '../MakeupListItem/MakeupListItem';
 
 export default function MakeupList({ makeupItems }) {
@@ -7,8 +8,9 @@ export default function MakeupList({ makeupItems }) {
     <div className="MakeupList">
         {makeupItems.map(item => (
           <div key={item._id} className='ListItem'>
-            {/* Each item will take 3 columns on large screens */}
-            <MakeupListItem makeupItem={item} />
+            <Link to={`/makeup/${item.name}`}>
+              <MakeupListItem makeupItem={item} />
+            </Link>
           </div>
         ))}
     </div>
