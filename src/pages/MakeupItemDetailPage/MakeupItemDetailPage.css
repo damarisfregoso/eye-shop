@@ -1,4 +1,23 @@
-.AuthPage {
-  color: pink;
-  font-family: 'DM Sans', sans-serif;
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+  grid-gap: 20px; /* Gap between grid items */
+}
+
+.MakeupItemDetailPage img{
+  height: 700px
+}
+
+.MakeupItemDetailPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MakeupItemDetailPage h1 {
+  font-size: 43px;
+}
+
+.MakeupItemDetailPage p {
+  font-size: 30px;
 }

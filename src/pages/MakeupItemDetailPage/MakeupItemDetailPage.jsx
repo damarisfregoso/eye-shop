@@ -9,9 +9,8 @@ export default function MakeupItemDetailPage({ makeupItems }) {
 
   return (
     <div className='MakeupItemDetailPage'>
-      <div>
-
-      
+      <div className='grid-container'>
+        <div className='container1'>
         <h1>{item}</h1>
         {selectedItem.images.length > 1 ? (
           <Carousel>
@@ -24,11 +23,12 @@ export default function MakeupItemDetailPage({ makeupItems }) {
         ) : (
           <img src={selectedItem.images[0]} alt={selectedItem.name} />
         )}
-      </div>
-      <div>
+        </div>
+      <div className='container2'>
         <h1>Details</h1>
         <p>{selectedItem.info}</p>
-        <p>${selectedItem.price.toFixed(2)}</p>
+        <p className='price'>${selectedItem.price.toFixed(2)}</p>
+      </div>
       </div>
     </div>
   );
