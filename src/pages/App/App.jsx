@@ -64,7 +64,11 @@ export default function App() {
         activeCat={activeCat}
         setActiveCat={setActiveCat}
         />}/>
-        <Route path="/orders" element={<OrderHistoryPage />} />
+        <Route path="/orders" element={<OrderHistoryPage 
+          activeCat={activeCat}
+          setActiveCat={setActiveCat}
+          categoriesRef={categoriesRef}
+        />} />
         <Route path="/login" element={<AuthPage setUser={setUser} />} />
         <Route path="/category/:cat" element={<CategoryPage 
         makeupItems={makeupItems}
@@ -73,7 +77,11 @@ export default function App() {
         categoriesRef={categoriesRef}
         />}/>
         <Route path="/makeup/:item" element={<MakeupItemDetailPage makeupItems={makeupItems}/>}/>
-        <Route path="/cart" element={<CartPage />}/>
+        <Route path="/cart" element={<CartPage 
+          activeCat={activeCat}
+          setActiveCat={setActiveCat}
+          categoriesRef={categoriesRef}
+        />}/>
       </Routes>
     </main>
   );

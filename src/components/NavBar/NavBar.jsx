@@ -16,11 +16,11 @@ export default function NavBar({ user, setUser }) {
         <Link to="/" >
           Eye Shop
         </Link>
-        &nbsp; | &nbsp;
-        <Link to="/purchases" >
-          Purchases
+        &nbsp; | &nbsp; &nbsp;
+        <Link to="/orders" >
+          Orders
         </Link>
-        &nbsp; | &nbsp;
+        &nbsp; | &nbsp; &nbsp;
         <Link to="/cart" >
           Cart
         </Link>
