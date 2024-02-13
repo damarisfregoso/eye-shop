@@ -12,6 +12,7 @@ export default function MakeupItemDetailPage({ makeupItems }) {
       <div className='grid-container'>
         <div className='container1'>
         <h1>{item}</h1>
+        <div className="CarouselContainer">
         {selectedItem.images.length > 1 ? (
           <Carousel>
             {selectedItem.images.map((image, index) => (
@@ -23,6 +24,7 @@ export default function MakeupItemDetailPage({ makeupItems }) {
         ) : (
           <img src={selectedItem.images[0]} alt={selectedItem.name} />
         )}
+        </div>
         </div>
       <div className='container2'>
         <h1>Details</h1>

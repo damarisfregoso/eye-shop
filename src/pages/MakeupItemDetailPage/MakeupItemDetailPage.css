@@ -4,10 +4,6 @@
   grid-gap: 20px; /* Gap between grid items */
 }
 
-.MakeupItemDetailPage img{
-  height: 700px
-}
-
 .MakeupItemDetailPage {
   display: flex;
   align-items: center;

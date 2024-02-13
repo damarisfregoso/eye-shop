@@ -9,6 +9,7 @@ import NavBar from '../../components/NavBar/NavBar';
 import WelcomePage from '../WelcomePage/WelcomePage';
 import CategoryPage from '../CategoryPage/CategoryPage';
 import * as itemsAPI from '../../utilities/items-api';
+import CartPage from '../CartPage/CartPage';
 // import * as ordersAPI from '../../'
 
 export default function App() {
@@ -72,6 +73,7 @@ export default function App() {
         categoriesRef={categoriesRef}
         />}/>
         <Route path="/makeup/:item" element={<MakeupItemDetailPage makeupItems={makeupItems}/>}/>
+        <Route path="/cart" element={<CartPage />}/>
       </Routes>
     </main>
   );
