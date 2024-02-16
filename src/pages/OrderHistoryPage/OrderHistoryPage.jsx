@@ -1,7 +1,8 @@
 // import * as usersService from'../../utilities/users-service';
 import CategoryList from "../../components/CategoryList/CategoryList";
+import OrderDetail from "../../components/OrderDetail/OrderDetail";
 
-export default function OrderHistoryPage({activeCat, setActiveCat, categoriesRef}) {
+export default function OrderHistoryPage({activeCat, setActiveCat, categoriesRef, user}) {
 
   return (
     <div className="OrderHistoryPage">
@@ -11,6 +12,7 @@ export default function OrderHistoryPage({activeCat, setActiveCat, categoriesRef
         activeCat={activeCat}
         setActiveCat={setActiveCat}
       />
+      {user ? (<OrderDetail />) : (<h1>Silly Goose You Have To Log In To See Your Past Orders</h1>)}
     </div>
   );
 }

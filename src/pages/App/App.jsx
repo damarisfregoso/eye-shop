@@ -68,6 +68,8 @@ export default function App() {
           activeCat={activeCat}
           setActiveCat={setActiveCat}
           categoriesRef={categoriesRef}
+          user={user} 
+          setUser={setUser} 
         />} />
         <Route path="/login" element={<AuthPage setUser={setUser} />} />
         <Route path="/category/:cat" element={<CategoryPage 
@@ -81,6 +83,8 @@ export default function App() {
           activeCat={activeCat}
           setActiveCat={setActiveCat}
           categoriesRef={categoriesRef}
+          user={user} 
+          setUser={setUser} 
         />}/>
       </Routes>
     </main>
