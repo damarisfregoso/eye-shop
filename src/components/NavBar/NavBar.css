@@ -3,12 +3,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px; /* Adjust padding as needed */
-  font-size: 18px;
+  font-size: 40px;
 }
 
 .NavBar span {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .DarkMode {
@@ -33,4 +33,10 @@
   color: var(--bright_pink);
   font-weight: bold; /* Optionally, add other styling for active links */
   text-decoration: underline; /* Add underline for active links */
+}
+
+.NavBar img {
+  height: 50px;
+  display: flex;
+  align-items: center;
 }

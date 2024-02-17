@@ -1,4 +1,4 @@
-export default function OrderDetail () {
+export default function CartDetail() {
 
   return (
     <div>

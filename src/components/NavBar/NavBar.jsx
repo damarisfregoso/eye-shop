@@ -22,7 +22,7 @@ export default function NavBar({ user, setUser }) {
         </Link>
         &nbsp; | &nbsp; &nbsp;
         <Link to="/cart" >
-          Cart
+          <img src="https://www.childcaps.com/Upload/Categories/e435bc88-9d50-4e03-baa8-924fa7d0356f.png" alt="cart" />
         </Link>
         &nbsp; | &nbsp;
         {user ? 
@@ -33,9 +33,10 @@ export default function NavBar({ user, setUser }) {
           </Link> 
         </> 
         :
-        <Link to='/login'>Sign In</Link>
+        <Link to='/login'>
+          <img src="https://static.vecteezy.com/system/resources/previews/022/286/343/original/user-icon-pink-3d-render-png.png" alt="Login/Sign in" />
+        </Link>
       }
-
       </span>
     </nav>
   );
