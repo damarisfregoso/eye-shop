@@ -18,7 +18,7 @@ export default function NavBar({ user, setUser }) {
         </Link>
         &nbsp; | &nbsp; &nbsp;
         <Link to="/orders" >
-          Orders
+          Prev Orders
         </Link>
         &nbsp; | &nbsp; &nbsp;
         <Link to="/cart" >

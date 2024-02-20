@@ -18,7 +18,7 @@ export default function CategoryPage({ makeupItems, activeCat, setActiveCat, cat
           setActiveCat={setActiveCat}
         />
     <section>
-      <MakeupList makeupItems={filteredMakeupItems} />
+      <MakeupList makeupItems={filteredMakeupItems} handleAddToOrder={handleAddToOrder}/>
     </section>
 </div>
 
