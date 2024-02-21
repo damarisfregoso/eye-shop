@@ -1,8 +1,48 @@
-export default function OrderDetail () {
+import LineItem from "../LineItem/LineItem";
+
+export default function OrderDetail ({ order }) {
+  if(!order) return null;
+
+  const lineItems = order.lineItems.map(item =>
+  <LineItem
+    lineItem={item}
+    isPaid={order.isPaid}
+    key={item._id}
+  />
+);
 
   return (
-    <div>
-      <h1>Order Detail!</h1>
+    <div className="OrderDetail">
+      <div className="title">
+        <h1>Order Details!</h1>
+        {order.isPaid ? 
+        <h1>Order {order.orderId}</h1>
+        :
+        <h1>New Order</h1>
+        }
+        <span>{new Date(order.updatedAt).toLocaleDateString()}</span>
+      </div>
+      <div>
+        {lineItems.length ? 
+          <>
+          <section className="total">
+          {order.isPaid ?
+                <span className="right">TOTAL&nbsp;&nbsp;</span>
+                :
+                <button
+                  className="btn-sm"
+                  onClick={handleCheckout}
+                  disabled={!lineItems.length}
+                >CHECKOUT</button>
+              }
+              <span>{order.totalQty}</span>
+              <span className="right">${order.orderTotal.toFixed(2)}</span>
+          </section>
+          </>
+          :
+          <div className="shop">Shop The Goodies&#10083;</div>
+        }
+      </div>
     </div>
   )
 }
