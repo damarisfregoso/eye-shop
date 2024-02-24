@@ -10,7 +10,7 @@ import WelcomePage from '../WelcomePage/WelcomePage';
 import CategoryPage from '../CategoryPage/CategoryPage';
 import * as itemsAPI from '../../utilities/items-api';
 import CartPage from '../CartPage/CartPage';
-// import * as ordersAPI from '../../'
+import * as ordersAPI from '../../utilities/orders-api'
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -87,6 +87,7 @@ export default function App() {
         activeCat={activeCat}
         setActiveCat={setActiveCat}
         categoriesRef={categoriesRef}
+        handleAddToOrder={handleAddToOrder}
         />}/>
         <Route path="/makeup/:item" element={<MakeupItemDetailPage makeupItems={makeupItems}/>}/>
         <Route path="/cart" element={<CartPage 
