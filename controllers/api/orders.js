@@ -8,9 +8,10 @@ module.exports = {
   checkout,
 };
 
-// A cart is the unpaid order for a user
 async function cart(req, res) {
-
+  // A cart is the unpaid order for a user
+  const cart = await Order.getCart(req.user._id);
+  res.json(cart);
 }
 
 // Add an item to the cart

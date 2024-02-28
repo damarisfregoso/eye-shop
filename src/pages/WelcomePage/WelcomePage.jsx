@@ -2,7 +2,7 @@ import CategoryList from "../../components/CategoryList/CategoryList";
 import './WelcomePage.css';
 
 
-export default function WelcomePage({ user, setUser, categoriesRef, categoryInfo, activeCat, setActiveCat }) {
+export default function WelcomePage({ user, setUser, categoriesRef, categoryInfo, activeCat, setActiveCat, cart, setCart }) {
 
 
   return (

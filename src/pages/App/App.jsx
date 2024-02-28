@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
@@ -17,6 +17,7 @@ export default function App() {
   const [makeupItems, setMakeupItems] = useState([]);
   const [activeCat, setActiveCat] = useState('');
   const [categoryInfo, setCategoryInfo] = useState({});
+  const [cart, setCart] = useState(null);
   const categoriesRef = useRef([]);
 
   useEffect(() => {
@@ -25,6 +26,12 @@ export default function App() {
       categoriesRef.current = [...new Set(items.map(item => item.category.name))];
       setMakeupItems(items);
       setActiveCat(categoriesRef.current[0]);
+
+    async function getCart() {
+      const cart = await ordersAPI.getCart();
+      setCart(cart);
+    }
+    getCart();
 
       // Generate random image and info for each category
       const categoryInfoMap = {};
@@ -58,7 +65,7 @@ export default function App() {
 
   async function handleCheckout() {
     await ordersAPI.checkout();
-    navigate('/orders');
+    Navigate('/orders');
   }
 
   return (
@@ -73,6 +80,8 @@ export default function App() {
         categoryInfo={categoryInfo}
         activeCat={activeCat}
         setActiveCat={setActiveCat}
+        cart={setCart}
+        setCart={setCart}
         />}/>
         <Route path="/orders" element={<OrderHistoryPage 
           activeCat={activeCat}
