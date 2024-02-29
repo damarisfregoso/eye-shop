@@ -11,7 +11,7 @@ export default function CartPage({ activeCat, setActiveCat, categoriesRef, user 
         activeCat={activeCat}
         setActiveCat={setActiveCat}
       />
-      {user ? (<CartDetail />) : (<h1>Silly Goose You Have To Log In To See Your Past Orders</h1>)}
+      {user ? (<CartDetail />) : (<h1>Silly Goose You Have To Log In To See Your Cart!</h1>)}
     </div>
   )
 }

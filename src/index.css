@@ -100,32 +100,23 @@ form {
 }
 
 label {
-  font-size: 2vmin;
+  font-size: 3vmin;
   display: flex;
   align-items: center;
+  justify-content: left;
 }
 
-/* input {
+input {
   padding: 1vmin;
-  font-size: 2vmin;
+  font-size: 60px;
   border: .1vmin solid var(--tan-3);
   border-radius: .5vmin;
   color: var(--text-dark);
   background-image: none !important;
   outline: none;
-} */
-
-input {
-  background: 0 0;
-  border: none;
-  border-bottom: 1px solid #7f2549;
-  border-radius: 0;
-  color: #7f2549;
-  padding: 0.4375rem 1.125rem;
-  text-align: left;
-  width: 100%;
-  font-size: 1rem;
 }
+
+
 
 input:focus {
   border-color: var(--orange);
