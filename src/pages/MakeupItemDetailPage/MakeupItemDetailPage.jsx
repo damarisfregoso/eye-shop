@@ -2,7 +2,7 @@ import './MakeupItemDetailPage.css'
 import { useParams } from 'react-router-dom'; 
 import { Carousel } from 'react-bootstrap';
 
-export default function MakeupItemDetailPage({ makeupItems }) {
+export default function MakeupItemDetailPage({ makeupItems, handleAddToOrder }) {
 
   const { item } = useParams();
   const selectedItem = makeupItems.find((picked) => picked.name === item)
@@ -28,8 +28,13 @@ export default function MakeupItemDetailPage({ makeupItems }) {
         </div>
       <div className='container2'>
         <h1>Details</h1>
-        <p>{selectedItem.info}</p>
-        <p className='price'>${selectedItem.price.toFixed(2)}</p>
+        <p>{selectedItem.info}</p> 
+        <div className='price'>
+          <p>${selectedItem.price.toFixed(2)}</p>
+          <button className="btn" onClick={() => handleAddToOrder(selectedItem._id)}>
+              ADD
+          </button>
+        </div>
       </div>
       </div>
     </div>

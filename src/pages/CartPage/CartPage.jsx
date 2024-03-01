@@ -1,5 +1,5 @@
 import CategoryList from "../../components/CategoryList/CategoryList"
-import CartDetail from "../../components/CartDetail/CartDetail"
+import OrderDetail from "../../components/OrderDetail/OrderDetail"
 
 export default function CartPage({ activeCat, setActiveCat, categoriesRef, user }) {
 
@@ -11,7 +11,7 @@ export default function CartPage({ activeCat, setActiveCat, categoriesRef, user 
         activeCat={activeCat}
         setActiveCat={setActiveCat}
       />
-      {user ? (<CartDetail />) : (<h1>Silly Goose You Have To Log In To See Your Cart!</h1>)}
+      {user ? (<OrderDetail />) : (<h1>Silly Goose You Have To Log In To See Your Cart!</h1>)}
     </div>
   )
 }

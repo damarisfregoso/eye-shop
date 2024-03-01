@@ -98,13 +98,18 @@ export default function App() {
         categoriesRef={categoriesRef}
         handleAddToOrder={handleAddToOrder}
         />}/>
-        <Route path="/makeup/:item" element={<MakeupItemDetailPage makeupItems={makeupItems}/>}/>
+        <Route path="/makeup/:item" element={<MakeupItemDetailPage makeupItems={makeupItems}/>}
+        handleAddToOrder={handleAddToOrder}
+        />
         <Route path="/cart" element={<CartPage 
           activeCat={activeCat}
           setActiveCat={setActiveCat}
           categoriesRef={categoriesRef}
           user={user} 
           setUser={setUser} 
+          order={cart}
+          handleChangeQty={handleChangeQty}
+          handleCheckout={handleCheckout}
         />}/>
       </Routes>
     </main>

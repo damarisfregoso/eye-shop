@@ -15,5 +15,23 @@
 }
 
 .MakeupItemDetailPage p {
+  font-size: 25px;
+}
+
+.price {
+  color: rgb(146, 255, 146);
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.btn {
+  color: rgb(146, 255, 146);
+  display: flex;
+  justify-content: center;
+  align-content: center;
   font-size: 30px;
 }
