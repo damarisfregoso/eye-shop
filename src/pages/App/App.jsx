@@ -27,12 +27,6 @@ export default function App() {
       setMakeupItems(items);
       setActiveCat(categoriesRef.current[0]);
 
-    async function getCart() {
-      const cart = await ordersAPI.getCart();
-      setCart(cart);
-    }
-    getCart();
-
       // Generate random image and info for each category
       const categoryInfoMap = {};
       categoriesRef.current.forEach(category => {
@@ -107,9 +101,10 @@ export default function App() {
           categoriesRef={categoriesRef}
           user={user} 
           setUser={setUser} 
-          order={cart}
           handleChangeQty={handleChangeQty}
           handleCheckout={handleCheckout}
+          cart={cart}
+          setCart={setCart}
         />}/>
       </Routes>
     </main>

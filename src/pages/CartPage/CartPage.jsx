@@ -1,7 +1,17 @@
 import CategoryList from "../../components/CategoryList/CategoryList"
-import OrderDetail from "../../components/OrderDetail/OrderDetail"
+import CartDetail from "../../components/CartDetail/CartDetail"
+import * as ordersAPI from '../../utilities/orders-api'
+import { useEffect } from "react";
 
-export default function CartPage({ activeCat, setActiveCat, categoriesRef, user }) {
+export default function CartPage({ activeCat, setActiveCat, categoriesRef, user, cart, setCart}) {
+
+  useEffect(function() {
+    async function getCart() {
+      const cart = await ordersAPI.getCart();
+      setCart(cart);
+    }
+    getCart();
+  }, []);
 
   return (
     <div className="CartPage">
@@ -11,7 +21,11 @@ export default function CartPage({ activeCat, setActiveCat, categoriesRef, user 
         activeCat={activeCat}
         setActiveCat={setActiveCat}
       />
-      {user ? (<OrderDetail />) : (<h1>Silly Goose You Have To Log In To See Your Cart!</h1>)}
+      {user ? (
+        <CartDetail order={cart}/>
+        ) : (
+        <h1>Silly Goose You Have To Log In To See Your Cart!</h1>
+        )}
     </div>
   )
 }

@@ -1,4 +1,7 @@
+import LineItem from "../LineItem/LineItem"
+
 export default function CartDetail() {
+  
 
   return (
     <div>
