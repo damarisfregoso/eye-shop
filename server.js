@@ -26,7 +26,10 @@ app.use('/api/users', require('./routes/api/users'));
 
 //Protect all routesbelow from annoymous users
 // const ensureLoggedIn = require('./config/ensureLoggedIn');
-app.use('/api/items', require('./routes/api/items'))
+app.use('/api/items', require('./routes/api/items'));
+app.use('/api/orders', require('./routes/api/orders'));
+
+
 
 // The following "catch all" route (note the *) is necessary
 // to return the index.html on all non-AJAX/API requests

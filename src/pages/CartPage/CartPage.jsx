@@ -3,7 +3,7 @@ import CartDetail from "../../components/CartDetail/CartDetail"
 import * as ordersAPI from '../../utilities/orders-api'
 import { useEffect } from "react";
 
-export default function CartPage({ activeCat, setActiveCat, categoriesRef, user, cart, setCart}) {
+export default function CartPage({ activeCat, setActiveCat, categoriesRef, user, cart, setCart, handleChangeQty, handleCheckout}) {
 
   useEffect(function() {
     async function getCart() {
@@ -22,7 +22,11 @@ export default function CartPage({ activeCat, setActiveCat, categoriesRef, user,
         setActiveCat={setActiveCat}
       />
       {user ? (
-        <CartDetail order={cart}/>
+        <CartDetail 
+        order={cart}
+        handleChangeQty={handleChangeQty}
+        handleCheckout={handleCheckout}
+        />
         ) : (
         <h1>Silly Goose You Have To Log In To See Your Cart!</h1>
         )}
