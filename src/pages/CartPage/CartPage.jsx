@@ -1,17 +1,7 @@
 import CategoryList from "../../components/CategoryList/CategoryList"
 import CartDetail from "../../components/CartDetail/CartDetail"
-import * as ordersAPI from '../../utilities/orders-api'
-import { useEffect } from "react";
 
 export default function CartPage({ activeCat, setActiveCat, categoriesRef, user, cart, setCart, handleChangeQty, handleCheckout}) {
-
-  useEffect(function() {
-    async function getCart() {
-      const cart = await ordersAPI.getCart();
-      setCart(cart);
-    }
-    getCart();
-  }, []);
 
   return (
     <div className="CartPage">

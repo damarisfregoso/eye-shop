@@ -20,7 +20,7 @@ export default function App() {
   const [cart, setCart] = useState(null);
   const categoriesRef = useRef([]);
 
-  useEffect(() => {
+  useEffect(function() {
     async function getItems() {
       const items = await itemsAPI.getAll();
       categoriesRef.current = [...new Set(items.map(item => item.category.name))];
@@ -43,6 +43,12 @@ export default function App() {
       setCategoryInfo(categoryInfoMap);
     }
     getItems();
+
+    async function getCart() {
+      const cart = await ordersAPI.getCart();
+      setCart(cart);
+    }
+    getCart();
   }, []);
 
   async function handleAddToOrder(itemId) {
@@ -74,7 +80,7 @@ export default function App() {
         categoryInfo={categoryInfo}
         activeCat={activeCat}
         setActiveCat={setActiveCat}
-        cart={setCart}
+        cart={cart}
         setCart={setCart}
         />}/>
         <Route path="/orders" element={<OrderHistoryPage 

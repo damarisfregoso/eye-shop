@@ -6,6 +6,7 @@ module.exports = {
   addToCart,
   setItemQtyInCart,
   checkout,
+  getAllForUser
 };
 
 async function cart(req, res) {
@@ -26,5 +27,9 @@ async function setItemQtyInCart(req, res) {
 
 // Update the cart's isPaid property to true
 async function checkout(req, res) {
+
+}
+
+async function getAllForUser(req, res) {
 
 }
