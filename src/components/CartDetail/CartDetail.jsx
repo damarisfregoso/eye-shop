@@ -15,13 +15,8 @@ export default function CartDetail({ order, handleChangeQty, handleCheckout}) {
 
   return (
     <div className='CartDetail'>
-      <div>
-        {order.isPaid ?
-          <span>ORDER <span className="smaller">{order.orderId}</span></span>
-          :
-          <span>NEW ORDER</span>
-        }
-        <span>{new Date(order.updatedAt).toLocaleDateString()}</span>
+      <div className='NewOrder'>
+        <h1>New Order for <span>{new Date(order.updatedAt).toLocaleDateString()}</span></h1>
       </div>
       <div>
         {lineItems.length ?
@@ -42,7 +37,10 @@ export default function CartDetail({ order, handleChangeQty, handleCheckout}) {
             </section>
           </>
           :
-          <div className="Goodies"> Woah there... Browse the GOODIES first then check out your cart this is how it works!</div>
+          <div className="Goodies"> 
+            <p>Woah there... </p> 
+            <p> Browse the GOODIES first then check out your cart this is how it works!</p>
+          </div>
         }
       </div>
     </div>

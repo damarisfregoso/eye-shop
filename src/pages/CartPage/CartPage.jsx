@@ -5,7 +5,7 @@ export default function CartPage({ activeCat, setActiveCat, categoriesRef, user,
 
   return (
     <div className="CartPage">
-      <h1>These Goodies 😍 Are Waiting For You &#10083; </h1>
+      <h1>Here is your cart &#10083; 😍</h1>
         <CategoryList
         categories={categoriesRef.current}
         activeCat={activeCat}

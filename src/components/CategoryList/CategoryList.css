@@ -11,6 +11,7 @@
   text-align: center;
   border-radius: .5vmin;
   margin-bottom: .5vmin;
+  color: var(--body_color);
 }
     
 .CategoryList li:hover:not(.active) {

@@ -1,0 +1,8 @@
+.CartDetail p {
+  font-size: 30px;
+  margin: 20px;
+}
+
+.NewOrder {
+  border-bottom: 1px solid var(--body_color);
+}
