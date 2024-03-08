@@ -18,6 +18,11 @@
   font-size: 25px;
 }
 
+.MakeupItemDetailPage img {
+  height: 500px;
+  width: 500px;
+}
+
 .price {
   color: rgb(146, 255, 146);
   font-size: 20px;

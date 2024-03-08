@@ -31,7 +31,7 @@ export default function MakeupItemDetailPage({ makeupItems, handleAddToOrder }) 
         <p>{selectedItem.info}</p> 
         <div className='price'>
           <p>${selectedItem.price.toFixed(2)}</p>
-          <button className="btn" onClick={() => handleAddToOrder(selectedItem._id)}>
+          <button className="AddButton" onClick={() => handleAddToOrder(selectedItem._id)}>
               ADD
           </button>
         </div>
