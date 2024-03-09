@@ -1,10 +1,10 @@
-
+import './LineItem.css'
 
 export default function LineItem({ lineItem, isPaid, handleChangeQty }) {
   return (
     <div className="LineItem">
-      <div className="flex-ctr-ctr">{lineItem.item.images}</div>
-      <div className="flex-ctr-ctr flex-col">
+      <img src={lineItem.item.images} alt={lineItem.item.name}/>
+      <div>
         <span className="align-ctr">{lineItem.item.name}</span>
         <span>{lineItem.item.price.toFixed(2)}</span>
       </div>

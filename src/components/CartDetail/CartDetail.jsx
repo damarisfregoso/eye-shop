@@ -22,9 +22,9 @@ export default function CartDetail({ order, handleChangeQty, handleCheckout}) {
         {lineItems.length ?
           <>
             {lineItems}
-            <section className="total">
+            <section>
               {order.isPaid ?
-                <span className="right">TOTAL&nbsp;&nbsp;</span>
+                <span>TOTAL&nbsp;&nbsp;</span>
                 :
                 <button
                   className="btn-sm"
@@ -33,7 +33,7 @@ export default function CartDetail({ order, handleChangeQty, handleCheckout}) {
                 >CHECKOUT</button>
               }
               <span>{order.totalQty}</span>
-              <span className="right">${order.orderTotal.toFixed(2)}</span>
+              <span>${order.orderTotal ? order.orderTotal.toFixed(2) : '0.00'}</span>
             </section>
           </>
           :

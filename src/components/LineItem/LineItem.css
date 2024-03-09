@@ -1,0 +1,9 @@
+.LineItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LineItem img {
+  height: 100px;
+}
