@@ -97,6 +97,7 @@ export default function App() {
         setActiveCat={setActiveCat}
         categoriesRef={categoriesRef}
         handleAddToOrder={handleAddToOrder}
+        user={user} 
         />}/>
         <Route path="/makeup/:item" element={<MakeupItemDetailPage makeupItems={makeupItems}/>}
         handleAddToOrder={handleAddToOrder}

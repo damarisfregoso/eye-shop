@@ -9,9 +9,23 @@ module.exports = {
   getAllForUser
 };
 
+// async function cart(req, res) {
+//   // A cart is the unpaid order for a user
+//   const cart = await Order.getCart(req.user._id);
+//   res.json(cart);
+// }
+
 async function cart(req, res) {
-  // A cart is the unpaid order for a user
-  const cart = await Order.getCart(req.user._id);
+  let userId = null;
+
+  // Check if user is authenticated
+  if (req.user) {
+    userId = req.user._id;
+  }
+
+  // Fetch cart based on user ID (null if not logged in)
+  const cart = await Order.getCart(userId);
+
   res.json(cart);
 }
 

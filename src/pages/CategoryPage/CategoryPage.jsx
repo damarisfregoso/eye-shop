@@ -4,7 +4,7 @@ import MakeupList from "../../components/MakeupList/MakeupList";
 import './CategoryPage.css'
 
 
-export default function CategoryPage({ makeupItems, activeCat, setActiveCat, categoriesRef, handleAddToOrder}) {
+export default function CategoryPage({ makeupItems, activeCat, setActiveCat, categoriesRef, handleAddToOrder, user }) {
 
   const { cat } = useParams();
   const filteredMakeupItems = makeupItems.filter(item => item.category.name === cat);
@@ -18,7 +18,7 @@ export default function CategoryPage({ makeupItems, activeCat, setActiveCat, cat
           setActiveCat={setActiveCat}
         />
     <section>
-      <MakeupList makeupItems={filteredMakeupItems} handleAddToOrder={handleAddToOrder}/>
+      <MakeupList makeupItems={filteredMakeupItems} handleAddToOrder={handleAddToOrder} user={user}/>
     </section>
 </div>
 
