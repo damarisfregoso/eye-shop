@@ -6,12 +6,6 @@ export default function MakeupList({ makeupItems, handleAddToOrder, user }) {
 
   const items = makeupItems.map(item => 
     <div className="items" key={item._id}>
-      <Link to={`/makeup/${item.name}`}>
-        <img src={item.images} alt={item.name} />
-        <h4>{item.name}</h4>
-        <h4 className="name">{item.by}</h4>
-        <p className='info'>{item.info}</p>
-      </Link>
       <MakeupListItem 
         key={item._id}
         makeupItem={item}

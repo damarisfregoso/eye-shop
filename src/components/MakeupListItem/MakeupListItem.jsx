@@ -19,6 +19,10 @@ export default function MakeupListItem({ makeupItem, handleAddToOrder, user }) {
 
   return (
       <div className="MakeupListItem">
+        <img src={makeupItem.images} alt={makeupItem.name} />
+        <h4>{makeupItem.name}</h4>
+        <h4 className="name">{makeupItem.by}</h4>
+        <p className='info'>{makeupItem.info}</p>
         <div className="buy">
           <span>${makeupItem.price.toFixed(2)}</span>
           <button className="AddButton" onClick={handleAddClick}>

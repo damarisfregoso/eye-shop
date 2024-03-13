@@ -4,7 +4,6 @@ import { getUser } from '../../utilities/users-service';
 import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
 import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
-import MakeupItemDetailPage from '../MakeupItemDetailPage/MakeupItemDetailPage';
 import NavBar from '../../components/NavBar/NavBar';
 import WelcomePage from '../WelcomePage/WelcomePage';
 import CategoryPage from '../CategoryPage/CategoryPage';
@@ -74,14 +73,14 @@ export default function App() {
       <Routes>
         {/* Route components in here */}
         <Route path="/" element={<WelcomePage 
-        user={user} 
-        setUser={setUser} 
-        categoriesRef={categoriesRef} 
-        categoryInfo={categoryInfo}
-        activeCat={activeCat}
-        setActiveCat={setActiveCat}
-        cart={cart}
-        setCart={setCart}
+          user={user} 
+          setUser={setUser} 
+          categoriesRef={categoriesRef} 
+          categoryInfo={categoryInfo}
+          activeCat={activeCat}
+          setActiveCat={setActiveCat}
+          cart={cart}
+          setCart={setCart}
         />}/>
         <Route path="/orders" element={<OrderHistoryPage 
           activeCat={activeCat}
@@ -92,16 +91,14 @@ export default function App() {
         />} />
         <Route path="/login" element={<AuthPage setUser={setUser} />} />
         <Route path="/category/:cat" element={<CategoryPage 
-        makeupItems={makeupItems}
-        activeCat={activeCat}
-        setActiveCat={setActiveCat}
-        categoriesRef={categoriesRef}
-        handleAddToOrder={handleAddToOrder}
-        user={user} 
+          makeupItems={makeupItems}
+          activeCat={activeCat}
+          setActiveCat={setActiveCat}
+          categoriesRef={categoriesRef}
+          handleAddToOrder={handleAddToOrder}
+          handleChangeQty={handleChangeQty}
+          user={user} 
         />}/>
-        <Route path="/makeup/:item" element={<MakeupItemDetailPage makeupItems={makeupItems}/>}
-        handleAddToOrder={handleAddToOrder}
-        />
         <Route path="/cart" element={<CartPage 
           activeCat={activeCat}
           setActiveCat={setActiveCat}
