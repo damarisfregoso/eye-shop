@@ -1,5 +1,4 @@
 import './MakeupList.css';
-import { Link } from 'react-router-dom';
 import MakeupListItem from '../MakeupListItem/MakeupListItem';
 
 export default function MakeupList({ makeupItems, handleAddToOrder, user }) {

@@ -8,10 +8,10 @@ router.get('/cart', ordersCtrl.cart);
 // GET /api/orders
 router.get('/', ordersCtrl.getAllForUser);
 // POST /api/orders/cart/items/:id
-router.post('/cart/items/:id', ensureLoggedIn, ordersCtrl.addToCart);
+router.post('/cart/items/:id', ordersCtrl.addToCart);
 // POST /api/orders/cart/checkout
-router.post('/cart/checkout', ensureLoggedIn, ordersCtrl.checkout);
+router.post('/cart/checkout', ordersCtrl.checkout);
 // POST /api/orders/cart/qty
-router.put('/cart/qty', ensureLoggedIn, ordersCtrl.setItemQtyInCart);
+router.put('/cart/qty', ordersCtrl.setItemQtyInCart);
 
 module.exports = router;

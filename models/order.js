@@ -74,4 +74,24 @@ orderSchema.methods.addItemToCart = async function (itemId) {
   return cart.save();
 };
 
+// Instance method to set an item's qty in the cart
+orderSchema.methods.setItemQty = async function(itemId, newQty) {
+  const cart = this;
+
+  // Find the line item in the cart for the menu item
+  const lineItem = cart.lineItems.find(lineItem => lineItem.item._id.equals(itemId));
+
+  if (lineItem) {
+    if (newQty <= 0) {
+      // Remove the line item from the array if the new quantity is less than or equal to 0
+      cart.lineItems = cart.lineItems.filter(item => !item.item._id.equals(itemId));
+    } else {
+      // Update the quantity of the line item
+      lineItem.qty = newQty;
+    }
+  }
+
+  return cart.save();
+};
+
 module.exports = mongoose.model('Order', orderSchema)
