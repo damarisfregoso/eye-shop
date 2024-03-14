@@ -89,7 +89,7 @@ orderSchema.methods.setItemQty = async function(itemId, newQty) {
       // Update the quantity of the line item
       lineItem.qty = newQty;
     }
-  }
+  } 
 
   return cart.save();
 };

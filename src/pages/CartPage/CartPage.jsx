@@ -13,9 +13,9 @@ export default function CartPage({ activeCat, setActiveCat, categoriesRef, user,
       />
       {user ? (
         <CartDetail 
-        order={cart}
-        handleChangeQty={handleChangeQty}
-        handleCheckout={handleCheckout}
+          order={cart}
+          handleChangeQty={handleChangeQty}
+          handleCheckout={handleCheckout}
         />
         ) : (
         <h1>Silly Goose You Have To Log In To See Your Cart!</h1>
