@@ -1,7 +1,7 @@
 import CategoryList from "../../components/CategoryList/CategoryList"
 import CartDetail from "../../components/CartDetail/CartDetail"
 
-export default function CartPage({ activeCat, setActiveCat, categoriesRef, user, cart, setCart, handleChangeQty, handleCheckout}) {
+export default function CartPage({ activeCat, setActiveCat, categoriesRef, user, order, setCart, handleChangeQty, handleCheckout}) {
 
   return (
     <div className="CartPage">
@@ -13,7 +13,7 @@ export default function CartPage({ activeCat, setActiveCat, categoriesRef, user,
       />
       {user ? (
         <CartDetail 
-          order={cart}
+          order={order}
           handleChangeQty={handleChangeQty}
           handleCheckout={handleCheckout}
         />

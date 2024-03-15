@@ -12,7 +12,6 @@ export default function CartDetail({ order, handleChangeQty, handleCheckout}) {
       key={item._id}
     />
   );
-  console.log("Order after rendering:", order);
 
   return (
     <div className='CartDetail'>
@@ -29,8 +28,8 @@ export default function CartDetail({ order, handleChangeQty, handleCheckout}) {
                   onClick={handleCheckout}
                   disabled={!lineItems.length}
                 >CHECKOUT</button>
-              <span>{order.totalQty}</span>
-              <span>${order.orderTotal.toFixed(2)}</span>
+              <span>{order.totalQty ? order.totalQty : 0}</span>
+              <span>${order.orderTotal ? order.orderTotal.toFixed(2) : 0}</span>
             </section>
           </>
           :

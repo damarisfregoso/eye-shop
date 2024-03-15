@@ -63,8 +63,8 @@ export default function App() {
   }
 
   async function handleCheckout() {
-    await ordersAPI.checkout();
-    Navigate('/orders');
+    // await ordersAPI.checkout();
+    // Navigate('/orders');
   }
 
   return (
@@ -107,7 +107,7 @@ export default function App() {
           setUser={setUser} 
           handleChangeQty={handleChangeQty}
           handleCheckout={handleCheckout}
-          cart={cart}
+          order={cart}
           setCart={setCart}
         />}/>
       </Routes>
