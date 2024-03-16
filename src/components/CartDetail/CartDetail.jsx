@@ -3,6 +3,7 @@ import LineItem from "../LineItem/LineItem"
 
 export default function CartDetail({ order, handleChangeQty, handleCheckout}) {
   if (!order) return null;
+  console.log("Order Object:", order);
 
   const lineItems = order.lineItems.map(item =>
     <LineItem

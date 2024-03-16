@@ -24,7 +24,8 @@ const orderSchema = new Schema({
   lineItems: [lineItemSchema],
   isPaid: { type: Boolean, default: false }
 }, {
-  timestamps: true
+  timestamps: true,
+  toJSON: { virtuals: true }
 });
 
 orderSchema.virtual('orderTotal').get(function() {
