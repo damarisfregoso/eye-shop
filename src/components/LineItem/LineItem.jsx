@@ -4,9 +4,9 @@ export default function LineItem({ lineItem, isPaid, handleChangeQty }) {
   return (
     <div className="LineItem">
       <img src={lineItem.item.images} alt={lineItem.item.name}/>
-      <div>
-        <span className="align-ctr">{lineItem.item.name}</span>
-        <span>{lineItem.item.price.toFixed(2)}</span>
+      <div className='lineDetail'>
+        <span className='lineInfo'>{lineItem.item.name}</span>
+        <span className='lineInfo'> ${lineItem.item.price.toFixed(2)}</span>
       </div>
       <div className="qty" style={{ justifyContent: isPaid && 'center' }}>
         {!isPaid &&

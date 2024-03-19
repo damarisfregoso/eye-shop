@@ -19,7 +19,7 @@ export default function CartDetail({ order, handleChangeQty, handleCheckout}) {
       <div className='NewOrder'>
         <h1>New Order for <span>{new Date(order.updatedAt).toLocaleDateString()}</span></h1>
       </div>
-      <div>
+      <div className='cartItems'>
         {lineItems.length ?
           <>
             {lineItems}
