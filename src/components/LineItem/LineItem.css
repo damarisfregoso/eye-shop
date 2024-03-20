@@ -1,13 +1,25 @@
 .LineItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+  grid-gap: 20px;
+  border-bottom: 1px solid pink;
+}
+
+.grid1 img {
+  max-width: 15%;
+}
+
+.lineItemsDetail button {
+  font-size: 15px;
+}
+
+.grid1 {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
 }
 
-.LineItem img {
-  height: 100px;
-}
-
-.lineInfo {
-  font-size: 20px;
+.grid2 {
+  display: flex;
+  justify-content: left;
+  text-align: left;
 }

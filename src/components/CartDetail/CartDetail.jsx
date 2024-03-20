@@ -17,7 +17,7 @@ export default function CartDetail({ order, handleChangeQty, handleCheckout}) {
   return (
     <div className='CartDetail'>
       <div className='NewOrder'>
-        <h1>New Order for <span>{new Date(order.updatedAt).toLocaleDateString()}</span></h1>
+        <h1>Bag for <span>{new Date(order.updatedAt).toLocaleDateString()}</span></h1>
       </div>
       <div className='cartItems'>
         {lineItems.length ?
@@ -29,8 +29,8 @@ export default function CartDetail({ order, handleChangeQty, handleCheckout}) {
                   onClick={handleCheckout}
                   disabled={!lineItems.length}
                 >CHECKOUT</button>
-              <span>{order.totalQty ? order.totalQty : 0}</span>
-              <span>${order.orderTotal ? order.orderTotal.toFixed(2) : 0}</span>
+              <span>{order.totalQty}</span>
+              <span>${order.orderTotal.toFixed(2)}</span>
             </section>
           </>
           :
