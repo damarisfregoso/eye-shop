@@ -12,6 +12,7 @@
   border-radius: .5vmin;
   margin-bottom: .5vmin;
   color: var(--body_color);
+  text-decoration: none;
 }
     
 .CategoryList li:hover:not(.active) {
@@ -21,6 +22,5 @@
 
 .CategoryList li.active {
   color: var(--bright_pink);
-  border: .1vmin solid var(--tan-3);
   font-weight: 900;
 }

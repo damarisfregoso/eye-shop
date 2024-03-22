@@ -25,6 +25,7 @@ body {
   background-color: var(--body_background);
   color: var(--body_color);
   font-family: 'DM Sans', sans-serif;
+  text-decoration: none;
 }
 
 
