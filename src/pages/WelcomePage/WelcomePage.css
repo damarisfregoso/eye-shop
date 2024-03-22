@@ -4,6 +4,12 @@
   height: 100%;
 }
 
+.WelcomePage h1{
+  margin: 0;
+  font-size: 36px;
+  padding: 10px 0;
+}
+
 .WelcomePage img {
   height: 400px;
 }

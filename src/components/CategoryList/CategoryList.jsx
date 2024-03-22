@@ -11,6 +11,7 @@ export default function CategoryList({ categories, activeCat, setActiveCat }) {
       <Link to={`/category/${cat}`}>{cat}</Link>
     </li>
   );
+
   return (
     <ul className="CategoryList">
       {cats}

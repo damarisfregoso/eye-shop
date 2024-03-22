@@ -1,5 +1,6 @@
 import CategoryList from "../../components/CategoryList/CategoryList"
 import CartDetail from "../../components/CartDetail/CartDetail"
+import './CartPage.css'
 
 export default function CartPage({ activeCat, setActiveCat, categoriesRef, user, order, setCart, handleChangeQty, handleCheckout}) {
 

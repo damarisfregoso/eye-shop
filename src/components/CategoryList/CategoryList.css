@@ -7,20 +7,20 @@
 }
 
 .CategoryList li {
-  padding: .6vmin;
   text-align: center;
-  border-radius: .5vmin;
   margin-bottom: .5vmin;
-  color: var(--body_color);
-  text-decoration: none;
-}
-    
-.CategoryList li:hover:not(.active) {
-  cursor: pointer;
-  color: var(--body_color);
 }
 
-.CategoryList li.active {
-  color: var(--bright_pink);
+.CategoryList a {
+  text-decoration: none;
+  color: var(--body_color); /* Set link color to custom variable */
+}
+
+.CategoryList a:hover {
+  color: white; /* Hover color same as parent */
+}
+
+.CategoryList li.active a {
+  color: var(--active_link_color);
   font-weight: 900;
 }

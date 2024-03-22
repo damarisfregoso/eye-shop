@@ -1,6 +1,7 @@
 // import * as usersService from'../../utilities/users-service';
 import CategoryList from "../../components/CategoryList/CategoryList";
 import OrderDetail from "../../components/OrderDetail/OrderDetail";
+import './OrderHistoryPage.css'
 
 export default function OrderHistoryPage({activeCat, setActiveCat, categoriesRef, user}) {
 

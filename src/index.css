@@ -2,12 +2,15 @@
 :root {
   --body_background: #ffffff;
   --body_color: #ff77b0;
-  --bright_pink: rgb(255, 77, 106);  
+  --bright_pink: ;
+  --active_link_color: rgb(255, 77, 106);  
+  --hover_link_color: ;
 }
 
 [data-theme="dark"] {
   --body_background: #1a1a1a;
   --body_color: #ff77b0;
+
 }
 
 * {

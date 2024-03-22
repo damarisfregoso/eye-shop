@@ -2,8 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px; /* Adjust padding as needed */
-  font-size: 40px;
+  font-size: 20px;
 }
 
 .NavBar span {
@@ -22,7 +21,7 @@
 }
 
 .NavBar a:hover {
-  color: #555; /* Set the link color on hover */
+  color: white;
 }
 
 .NavBar span span {
@@ -36,7 +35,7 @@
 }
 
 .NavBar img {
-  height: 50px;
+  height: 30px;
   display: flex;
   align-items: center;
 }
