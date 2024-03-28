@@ -38,3 +38,7 @@
 .WelcomePage p {
   font-size: 30px;
 }
+
+.WelcomePage a {
+  color: var(--body_color);
+}
