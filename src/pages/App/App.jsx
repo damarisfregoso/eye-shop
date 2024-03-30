@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
@@ -18,6 +18,7 @@ export default function App() {
   const [categoryInfo, setCategoryInfo] = useState({});
   const [cart, setCart] = useState(null);
   const categoriesRef = useRef([]);
+  const navigate = useNavigate();
 
   useEffect(function() {
     const storedActiveCat = localStorage.getItem('activeCat');
@@ -73,8 +74,8 @@ export default function App() {
   }
 
   async function handleCheckout() {
-    // await ordersAPI.checkout();
-    // Navigate('/orders');
+    await ordersAPI.checkout();
+    navigate('/orders');
   }
 
   return (
