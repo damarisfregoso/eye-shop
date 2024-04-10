@@ -3,7 +3,7 @@ import { Routes, Route, useNavigate } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
-import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
+import PrevOrderPage from '../PrevOrderPage/PrevOrderPage';
 import NavBar from '../../components/NavBar/NavBar';
 import WelcomePage from '../WelcomePage/WelcomePage';
 import CategoryPage from '../CategoryPage/CategoryPage';
@@ -93,7 +93,7 @@ export default function App() {
           cart={cart}
           setCart={setCart}
         />}/>
-        <Route path="/orders" element={<OrderHistoryPage 
+        <Route path="/orders" element={<PrevOrderPage 
           activeCat={activeCat}
           setActiveCat={setActiveCat}
           categoriesRef={categoriesRef}
