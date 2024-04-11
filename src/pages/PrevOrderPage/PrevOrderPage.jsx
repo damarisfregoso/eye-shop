@@ -1,8 +1,9 @@
 import { useState, useEffect} from 'react';
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import * as ordersAPI from '../../utilities/orders-api';
 import CategoryList from "../../components/CategoryList/CategoryList";
 import OrderDetail from "../../components/OrderDetail/OrderDetail";
+import OrderList from "../../components/OrderList/OrderList";
 import './PrevOrderPage.css'
 
 export default function PrevOrderPagePage({activeCat, setActiveCat, categoriesRef, user}) {
@@ -26,8 +27,14 @@ export default function PrevOrderPagePage({activeCat, setActiveCat, categoriesRe
         activeCat={activeCat}
         setActiveCat={setActiveCat}
       />
-      {user ? (<OrderDetail />) : (<h1>Silly Goose You Have To Log In To See Your Past Orders</h1>)}
-      <Link to="/orders/new" className="button btn-sm">NEW ORDER</Link>
+      <div className="PrevOrderGrid">
+        <OrderList
+          orders={orders}
+          activeOrder={activeOrder}
+          setActiveOrder={setActiveOrder}
+        />
+        <OrderDetail order={activeOrder} />
+      </div>
     </div>
   );
 }

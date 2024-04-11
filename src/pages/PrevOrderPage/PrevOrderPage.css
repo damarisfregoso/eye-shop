@@ -1,5 +1,13 @@
-.OrderHistoryPage h1{
-  margin: 0;
-  font-size: 36px;
-  padding: 10px 0;
+.PrevOrderGrid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PrevOrderGrid .OrderList {
+  font-size: 50px;
 }

@@ -14,7 +14,6 @@ export default function OrderDetail ({ order }) {
   return (
     <div className="OrderDetail">
       <div className="title">
-        <h1>Order Details!</h1>
         {order.isPaid ? 
         <h1>Order {order.orderId}</h1>
         :
@@ -29,11 +28,7 @@ export default function OrderDetail ({ order }) {
           {order.isPaid ?
                 <span className="right">TOTAL&nbsp;&nbsp;</span>
                 :
-                <button
-                  className="btn-sm"
-                  onClick={handleCheckout}
-                  disabled={!lineItems.length}
-                >CHECKOUT</button>
+              null
               }
               <span>{order.totalQty}</span>
               <span className="right">${order.orderTotal.toFixed(2)}</span>
