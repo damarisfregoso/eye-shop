@@ -338,7 +338,7 @@ const Item = require('./models/item');
       name: 'Moisturizers', 
       by: 'La Roche-Posay',
       images: [
-        'https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/510baNnaJ3L._SX466_.jpg'
+        'https://target.scene7.com/is/image/Target/GUEST_8f8ebc29-3de2-42d2-8354-6090f582bb13?wid=600&hei=600&qlt=80&fmt=webp'
       ], 
       category: categories[5], 
       subcategories:'Clear', 

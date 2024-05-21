@@ -17,6 +17,8 @@ export default function MakeupListItem({ makeupItem, handleAddToOrder, user }) {
     }
   };
 
+  console.log('Makeup Item:', makeupItem);
+
   return (
       <div className="MakeupListItem">
         <img src={makeupItem.images} alt={makeupItem.name} />
