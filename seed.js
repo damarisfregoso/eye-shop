@@ -199,7 +199,7 @@ const Item = require('./models/item');
       name: 'Positive Light Liquid Luminizer Highlight', 
       by: 'Rare Beauty',
       images: [
-        'https://static.wixstatic.com/media/9bdc5d_559a355619bf4b5b96f599111281e3a1~mv2.jpg/v1/fill/w_500,h_500,al_c,q_90/9bdc5d_559a355619bf4b5b96f599111281e3a1~mv2.jpg'
+        'https://www.rarebeauty.com/cdn/shop/products/Luminizer-Captivate-SKU_e07ef9c0-1ab0-42ce-9dfb-3844ebd9f4b1.jpg?v=1666327149'
       ], 
       category: categories[3], 
       subcategories: 'Liquid ',
@@ -221,7 +221,7 @@ const Item = require('./models/item');
       name: 'Pressed Powder Highlighter', 
       by: 'ColourPop',
       images: [
-        'https://static.wixstatic.com/media/9bdc5d_559a355619bf4b5b96f599111281e3a1~mv2.jpg/v1/fill/w_500,h_500,al_c,q_90/9bdc5d_559a355619bf4b5b96f599111281e3a1~mv2.jpg',
+        'https://skinsort.s3.us-east-2.amazonaws.com/leseadryo3zmmpmhvfsn6icj6ggz',
       ], 
       category: categories[3], 
       subcategories: 'Powder',
@@ -327,8 +327,7 @@ const Item = require('./models/item');
       name: 'Highlighting Brush', 
       by: 'e.l.f Cosmetics',
       images: [
-        'hhttps://media.ulta.com/i/ulta/2506980?w=1250&h=1250',
-        'https://media.ulta.com/i/ulta/2506980cm_alt01?w=1250&h=1250'
+        'https://images.gopuff.com/blob/gopuffcatalogstorageprod/catalog-images-container/resize/cf/version=1_0,format=auto,fit=scale-down,width=800,height=800/f60a11ba-c45e-48c0-abe2-ed2670e05010.png',
       ], 
       category: categories[4], 
       price: 5.00, 
@@ -338,7 +337,7 @@ const Item = require('./models/item');
       name: 'Moisturizers', 
       by: 'La Roche-Posay',
       images: [
-        'https://target.scene7.com/is/image/Target/GUEST_8f8ebc29-3de2-42d2-8354-6090f582bb13?wid=600&hei=600&qlt=80&fmt=webp'
+        'https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dwc3baf099/product/March%202023%20packshot%20updates/LIpikar-AP_Tripple-Repair-Moisturizer_400ml-Pump.jpg'
       ], 
       category: categories[5], 
       subcategories:'Clear', 
