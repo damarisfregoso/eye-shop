@@ -11,7 +11,7 @@ export default function AuthPage({ setUser }) {
 
   return (
     <main className='AuthPage'>
-      <h1>Log in to get all the EYE SHOP goodies!</h1>
+
       { showSignUp ?
           <SignUpForm setUser={setUser} navigate={navigate}/>
           :

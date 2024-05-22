@@ -40,10 +40,11 @@ export default class SignUpForm extends Component {
     return (
       <div className='content-center'>
         <div className="form-container">
+        <h1 >Sign up to get all the EYE SHOP goodies!</h1>
           <form autoComplete="off" onSubmit={this.handleSubmit}>
             <label htmlFor="Name">Name</label>
             <input type="text" name="name" id="Name" placeholder="Name" value={this.state.name} onChange={this.handleChange} required />
-            <label htmlFor="Email"></label>
+            <label htmlFor="Email">Email</label>
             <input type="email" name="email" id="Email" placeholder="Email" value={this.state.email} onChange={this.handleChange} required />
             <label htmlFor="Password">Password</label>
             <input type="password" name="password" id="Password" placeholder="Password" value={this.state.password} onChange={this.handleChange} required />

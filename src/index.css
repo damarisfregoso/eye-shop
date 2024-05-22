@@ -97,22 +97,21 @@ p.error-message {
 }
 
 form {
-  display: flex;
-  justify-content: center;
+  display: grid;
   align-items: center;
-  flex-direction: column;
 }
 
 label {
-  font-size: 3vmin;
+  font-size: 30px;
+  margin: 0 20px;
   display: flex;
   align-items: center;
-  justify-content: left;
 }
 
 input {
-  padding: 1vmin;
-  font-size: 60px;
+  padding: 2vmin;
+  margin: 1px 0;
+  font-size: 30px;
   border: .1vmin solid var(--tan-3);
   border-radius: .5vmin;
   color: var(--text-dark);

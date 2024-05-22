@@ -33,11 +33,12 @@ export default function LoginForm({ setUser }) {
   return (
     <div className='content-center'>
       <div className="form-container">
+      <h1>Log in to get all the EYE SHOP goodies!</h1>
         <form autoComplete="off" onSubmit={handleSubmit}>
           <label htmlFor="Email">Email</label>
-          <input type="text" name="email" id="Email" placeholder="Email" value={credentials.email} onChange={handleChange} required />
+          <input type="text" name="email" id="Email" placeholder="Enter Email" value={credentials.email} onChange={handleChange} required />
           <label htmlFor="Password">Password</label>
-          <input type="password" name="password" id="Password" placeholder="Password" value={credentials.password} onChange={handleChange} required />
+          <input type="password" name="password" id="Password" placeholder="Enter Password" value={credentials.password} onChange={handleChange} required />
           <button type="submit">LOG IN</button>
         </form>
       </div>
