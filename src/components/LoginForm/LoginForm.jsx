@@ -32,8 +32,8 @@ export default function LoginForm({ setUser }) {
 
   return (
     <div className='content-center'>
+      <h1 className='auth-title'>Log in to get all the Eye Shop goodies!</h1>
       <div className="form-container">
-      <h1>Log in to get all the EYE SHOP goodies!</h1>
         <form autoComplete="off" onSubmit={handleSubmit}>
           <label htmlFor="Email">Email</label>
           <input type="text" name="email" id="Email" placeholder="Enter Email" value={credentials.email} onChange={handleChange} required />

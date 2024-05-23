@@ -2,9 +2,7 @@
 :root {
   --body_background: #ffffff;
   --body_color: #ff77b0;
-  --bright_pink: ;
   --active_link_color: rgb(255, 77, 106);  
-  --hover_link_color: ;
 }
 
 [data-theme="dark"] {
@@ -90,6 +88,10 @@ code {
   border: .1vmin solid var(--tan-3);
   border-radius: 1vmin;
 }
+.auth-title {
+  font-size: 70px;
+  margin: 20px;
+}
 
 p.error-message {
   color: var(--orange);
@@ -109,7 +111,7 @@ label {
 }
 
 input {
-  padding: 2vmin;
+  padding: 1vmin;
   margin: 1px 0;
   font-size: 30px;
   border: .1vmin solid var(--tan-3);
@@ -119,35 +121,28 @@ input {
   outline: none;
 }
 
-
-
 input:focus {
-  border-color: var(--orange);
+  border-color: pink;
 }
 
-button, a.button {
+button {
   margin: 1vmin;
   padding: 1vmin;
   color: var(--white);
   background-color: var(--orange);
-  font-size: 2vmin;
+  font-size: 20px;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  border: .1vmin solid var(--tan-2);
+  border: 3px solid pink;
   border-radius: .5vmin;
   outline: none;
   cursor: pointer;
 }
 
-button.btn-sm {
-  font-size: 1.5vmin;
-  padding: .6vmin .8vmin;
-}
-
-button.btn-xs {
-  font-size: 1vmin;
-  padding: .4vmin .5vmin;
+button:hover {
+  color: black;
+  background-color: pink;
 }
 
 button:disabled, form:invalid button[type="submit"] {
