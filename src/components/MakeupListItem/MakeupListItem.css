@@ -6,15 +6,24 @@
 }
 
 .buy {
-  color: rgb(146, 255, 146);
+  color: var(--money_green);
   font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.buy button:hover {
+  color: black;
+  background-color: var(--money_green);
+}
+
 .AddButton {
   font-size: 15px;
-  border: 1px rgb(146, 255, 146) solid;
+  border: 1px var(--money_green) solid;
   padding: 5px;
+}
+
+.lineItemsDetail button {
+  
 }

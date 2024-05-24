@@ -3,7 +3,6 @@ import LineItem from "../LineItem/LineItem"
 
 export default function CartDetail({ order, handleChangeQty, handleCheckout}) {
   if (!order) return null;
-  console.log("Order Object:", order);
 
   const lineItems = order.lineItems.map(item =>
     <LineItem
@@ -24,13 +23,13 @@ export default function CartDetail({ order, handleChangeQty, handleCheckout}) {
           <>
             {lineItems}
             <section>
+              <p>Total items: {order.totalQty}</p>
+              <p>${order.orderTotal.toFixed(2)}</p>
                 <button
                   className="btn-sm"
                   onClick={handleCheckout}
                   disabled={!lineItems.length}
                 >CHECKOUT</button>
-              <span>{order.totalQty}</span>
-              <span>${order.orderTotal.toFixed(2)}</span>
             </section>
           </>
           :

@@ -3,6 +3,7 @@
   --body_background: #ffffff;
   --body_color: #ff77b0;
   --active_link_color: rgb(255, 77, 106);  
+  --money_green: rgb(146, 255, 146);
 }
 
 [data-theme="dark"] {
@@ -140,7 +141,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.content-center button:hover {
   color: black;
   background-color: pink;
 }

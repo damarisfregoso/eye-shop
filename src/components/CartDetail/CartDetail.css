@@ -6,3 +6,16 @@
 .NewOrder {
   border-bottom: 1px solid var(--body_color);
 }
+
+.cartItems p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.cartItems button:hover {
+  color: var(--money_green);
+  background-color: pink;
+}
+.cartItems button{
+  font-size: 20px;
+}

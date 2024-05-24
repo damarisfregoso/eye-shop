@@ -14,6 +14,7 @@ export default function LineItem({ lineItem, isPaid, handleChangeQty }) {
               <button
                 className="btn-xs"
                 onClick={() => handleChangeQty(lineItem.item._id, lineItem.qty - 1)}
+                style={{ color: 'rgb(255, 86, 86)' }}
               >−</button>
             }
             <span>{lineItem.qty}</span>
@@ -21,6 +22,7 @@ export default function LineItem({ lineItem, isPaid, handleChangeQty }) {
               <button
                 className="btn-xs"
                 onClick={() => handleChangeQty(lineItem.item._id, lineItem.qty + 1)}
+                style={{ color: 'var(--money_green)' }}
               >+</button>
             }
           <h5>${lineItem.extPrice.toFixed(2)}</h5>
