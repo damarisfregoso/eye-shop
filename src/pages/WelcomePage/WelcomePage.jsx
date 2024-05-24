@@ -17,7 +17,7 @@ export default function WelcomePage({ user, setUser, categoriesRef, categoryInfo
       />
 
       {categoriesRef.current.map(category => (
-        <div key={category}>
+        <div className="welcomeDiv" key={category}>
           <h2>{category}</h2>        
           <Link key={category} to={`/category/${category}`}>
             {categoryInfo[category] && (

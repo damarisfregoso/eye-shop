@@ -17,10 +17,18 @@
 }
 
 .CategoryList a:hover {
-  color: white; /* Hover color same as parent */
+  color: var(--active_link_color);
 }
 
 .CategoryList li.active a {
   color: var(--active_link_color);
   font-weight: 900;
+}
+
+@media (max-width: 480px) {
+  .CategoryList {
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 1px;
+  }
 }

@@ -42,3 +42,29 @@
 .WelcomePage a {
   color: var(--body_color);
 }
+
+@media (max-width: 480px) {
+  .WelcomePage img {
+    height: 200px;
+  }
+  .Box-2 h1 {
+    font-size: 30px;
+  }
+  .Box-2 p {
+    font-size: 14px;
+  }
+
+  .Category-Box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    height: auto;
+  }
+
+  .welcomeDiv h2 {
+    margin: 0;
+    padding: 30px 0 2px 0;
+  }
+
+}

@@ -13,6 +13,9 @@
   align-items: center;
 }
 
+.buy button {
+  border: 3px solid var(--money_green);
+}
 .buy button:hover {
   color: black;
   background-color: var(--money_green);
