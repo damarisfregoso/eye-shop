@@ -28,12 +28,18 @@ export default function PrevOrderPagePage({activeCat, setActiveCat, categoriesRe
         setActiveCat={setActiveCat}
       />
       <div className="PrevOrderGrid">
-        <OrderList
-          orders={orders}
-          activeOrder={activeOrder}
-          setActiveOrder={setActiveOrder}
+      {orders.length > 0 ? (
+          orders.map(order => (
+        <OrderDetail 
+        key={order._id}
+        order={order}
+        isActive={activeOrder && activeOrder._id === order._id}
+        setActiveOrder={setActiveOrder}
         />
-        <OrderDetail order={activeOrder} />
+      ))
+    ) : (
+      <h2>Buy some goodies first 💞</h2>
+    )}
       </div>
     </div>
   );

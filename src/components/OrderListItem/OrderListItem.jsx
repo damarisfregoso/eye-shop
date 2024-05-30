@@ -13,9 +13,6 @@ export default function OrderListItem({ order, activeOrder, setActiveOrder }) {
       </div>
       <div className="align-rt">
         <div>${order.lineItems.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2)}</div>
-        <div className="smaller">
-          {order.lineItems.reduce((total, item) => total + item.quantity, 0)} Item{order.lineItems.reduce((total, item) => total + item.quantity, 0) > 1 ? 's' : ''}
-        </div>
       </div>
     </div>
   );
