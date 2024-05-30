@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import CategoryList from "../../components/CategoryList/CategoryList"
 import CartDetail from "../../components/CartDetail/CartDetail"
 import './CartPage.css'
@@ -19,7 +20,12 @@ export default function CartPage({ activeCat, setActiveCat, categoriesRef, user,
           handleCheckout={handleCheckout}
         />
         ) : (
-        <h1>Silly Goose You Have To Log In To See Your Cart!</h1>
+        <>
+          <h1>Silly Goose You Have To Log In To See Your Cart!</h1>
+          <Link className="click" to="/login" >
+          Click here to login!
+        </Link>
+        </>
         )}
     </div>
   )

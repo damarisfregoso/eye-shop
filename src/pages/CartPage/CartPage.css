@@ -3,3 +3,19 @@
   font-size: 36px;
   padding: 10px 0;
 }
+
+.CartPage .click {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 0 0 0;
+  color: var(--body_color);
+    background: 
+      linear-gradient(var(--body_color) 0 0) no-repeat
+      var(--p, 200%) 100% / 200% var(--p, .08em);
+    transition: .3s var(--t, 0s), background-position .3s calc(.3s - var(--t, 0s));
+}
+.click:hover {
+  --p: 100%;
+  --t: .3s;
+  color: black;
+}

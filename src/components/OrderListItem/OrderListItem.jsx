@@ -1,18 +1,21 @@
 import './OrderListItem.css';
 
 export default function OrderListItem({ order, activeOrder, setActiveOrder }) {
+
   return (
     <div
-      className={`OrderListItem ${order === activeOrder ? 'selected' : ''}`}
-      onClick={() => setActiveOrder(order)}
+      className={`OrderListItem ${order._id === activeOrder ? 'active' : ''}`}
+      onClick={() => setActiveOrder(order._id)}
     >
       <div>
-        <div>Order Id: <span className="smaller">{order.orderId}</span></div>
+        <div>Order Id: <span className="smaller">{order._id}</span></div>
         <div className="smaller">{new Date(order.updatedAt).toLocaleDateString()}</div>
       </div>
       <div className="align-rt">
-        <div>${order.orderTotal.toFixed(2)}</div>
-        <div className="smaller">{order.orderQty} Item{order.orderQty > 1 ? 's' : ''}</div>
+        <div>${order.lineItems.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2)}</div>
+        <div className="smaller">
+          {order.lineItems.reduce((total, item) => total + item.quantity, 0)} Item{order.lineItems.reduce((total, item) => total + item.quantity, 0) > 1 ? 's' : ''}
+        </div>
       </div>
     </div>
   );

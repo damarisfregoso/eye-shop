@@ -101,6 +101,12 @@ p.error-message {
   text-align: center;
 }
 
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 form {
   display: grid;
   align-items: center;
