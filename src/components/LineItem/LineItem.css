@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two columns with equal width */
   grid-gap: 20px;
-  border-bottom: 1px solid pink;
 }
 
 .grid1 img {
@@ -23,4 +22,10 @@
   display: flex;
   justify-content: left;
   text-align: left;
+}
+
+@media (max-width: 480px) {
+  /* .grid1 img {
+    max-width: 50%;
+  } */
 }

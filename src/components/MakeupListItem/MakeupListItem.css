@@ -9,6 +9,10 @@
 }
 
 .buy {
+  padding-bottom: 20px;
+}
+
+.buy {
   color: var(--money_green);
   font-size: 20px;
   display: flex;

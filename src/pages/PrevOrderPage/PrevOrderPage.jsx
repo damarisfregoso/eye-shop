@@ -3,7 +3,6 @@ import { useState, useEffect} from 'react';
 import * as ordersAPI from '../../utilities/orders-api';
 import CategoryList from "../../components/CategoryList/CategoryList";
 import OrderDetail from "../../components/OrderDetail/OrderDetail";
-import OrderList from "../../components/OrderList/OrderList";
 import './PrevOrderPage.css'
 
 export default function PrevOrderPagePage({activeCat, setActiveCat, categoriesRef, user}) {

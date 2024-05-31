@@ -1,4 +1,5 @@
 import LineItem from "../LineItem/LineItem";
+import './OrderDetail.css'
 import { useState } from "react";
 
 export default function OrderDetail ({ order }) {
@@ -22,13 +23,11 @@ export default function OrderDetail ({ order }) {
     <div className="OrderDetail">
       <div className="singleOrder" onClick={handleToggle}>
         {order.isPaid ? 
-          <>
+          <div className="singleInfo">
             <h1>Order <span className="smaller">{order.orderId}</span></h1>
-            <span>{new Date(order.updatedAt).toLocaleDateString()}</span>
-            <span className="right">${order.orderTotal.toFixed(2)}</span>
-            <p>Total items: {order.totalQty}</p>
-            <button className="toggle-btn">{isExpanded ? 'Click here to close 🙈' : 'Click here to view 😍'}</button>
-          </> 
+            <p>{new Date(order.updatedAt).toLocaleDateString()}</p>
+            <button className="toggle-btn">{isExpanded ? 'Click here to close details 🙈' : 'Click here to view details 😍'}</button>
+          </div> 
           :
           <h1>New Order</h1>
         }
@@ -41,7 +40,7 @@ export default function OrderDetail ({ order }) {
                 {lineItems}
               </div>
               <section className="total">
-                {order.isPaid ? <span className="right">TOTAL&nbsp;&nbsp;</span> : null}
+                {order.isPaid ? <span>TOTAL&nbsp;&nbsp;</span> : null}
                 <span>{order.totalQty} </span>
                 <span className="right">&nbsp;&nbsp;${order.orderTotal.toFixed(2)}</span>
               </section>
