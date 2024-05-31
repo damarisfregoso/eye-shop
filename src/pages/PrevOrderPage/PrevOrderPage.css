@@ -7,8 +7,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 5px;
 }
 
 .PrevOrderGrid .OrderList {
   font-size: 50px;
 }
+

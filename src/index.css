@@ -22,7 +22,6 @@
 
 body {
   margin: 0;
-  padding: 2vmin;
   height: 100vh;
   background-color: var(--body_background);
   color: var(--body_color);

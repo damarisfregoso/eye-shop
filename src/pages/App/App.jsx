@@ -7,6 +7,7 @@ import PrevOrderPage from '../PrevOrderPage/PrevOrderPage';
 import NavBar from '../../components/NavBar/NavBar';
 import WelcomePage from '../WelcomePage/WelcomePage';
 import CategoryPage from '../CategoryPage/CategoryPage';
+import Footer from '../../components/Footer/Footer';
 import * as itemsAPI from '../../utilities/items-api';
 import CartPage from '../CartPage/CartPage';
 import * as ordersAPI from '../../utilities/orders-api'
@@ -122,6 +123,7 @@ export default function App() {
           setCart={setCart}
         />}/>
       </Routes>
+      <footer><Footer /></footer>
     </main>
   );
 }

@@ -43,6 +43,10 @@
   color: var(--body_color);
 }
 
+.category {
+  text-decoration: wavy var(--body_color) underline;
+}
+
 @media (max-width: 480px) {
   .WelcomePage img {
     height: 200px;

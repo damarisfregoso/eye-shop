@@ -1,0 +1,33 @@
+.Footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 18px;
+  text-align: center;
+  background-color: gray;
+}
+
+.Footer a {
+  text-decoration: none;
+  color: var(--body_color);
+} 
+
+.Footer a:hover {
+  color: var(--active_link_color);
+}
+.footer-one {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  padding-bottom: 2px;
+  border-bottom: 2px solid black;
+}
+
+.footer-one img {
+  height: 30px;
+}
+
+.footer-two {
+  padding-top: 20px;
+}

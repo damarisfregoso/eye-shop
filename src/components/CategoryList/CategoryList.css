@@ -1,9 +1,13 @@
 .CategoryList {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   list-style: none;
-  border: 2px pink solid;
+  border: 3px pink solid;
+  border-radius: 8px;
   font-size: 20px;
+  padding: 1vmin;
+  margin: 0 5px;
 }
 
 .CategoryList li {
