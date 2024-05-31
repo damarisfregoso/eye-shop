@@ -14,8 +14,8 @@ export default function NavBar({ user, setUser }) {
 
   return (
     <nav className='NavBar'>
-            <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
-        ☰
+      <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? '✖' : '☰'}
       </button>
       <DarkMode />
       <div className={`menu ${menuOpen ? 'open' : ''}`}>

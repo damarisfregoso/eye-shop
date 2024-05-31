@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 20px;
+  font-size: 15px;
   margin: 0;
 }
 
@@ -35,6 +35,16 @@
 .welcome-name {
   color: var(--active_link_color);
   text-decoration: var(--active_link_color) wavy underline;
+}
+
+.menu {
+  transition: max-height 0.3s ease-out;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.menu.open {
+  max-height: 500px; /* Adjust based on the menu content */
 }
 
 @media (max-width: 480px) {
