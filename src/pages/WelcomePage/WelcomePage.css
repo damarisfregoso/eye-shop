@@ -41,6 +41,12 @@
 
 .WelcomePage a {
   color: var(--body_color);
+  text-decoration: none;
+}
+
+.WelcomePage a:hover {
+  color: var(--active_link_color);
+  text-decoration: wavy var(--active_link_color) underline;
 }
 
 .category {
@@ -69,10 +75,6 @@
   .welcomeDiv h2 {
     margin: 0;
     padding: 30px 0 2px 0;
-  }
-
-  .WelcomePage a {
-    text-decoration: none;
   }
 
 }

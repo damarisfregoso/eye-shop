@@ -7,14 +7,14 @@
 ###### Created by Damaris Fregoso
 [![LinkedIn](https://img.shields.io/badge/Damaris-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/damaris-fregoso/) [![GitHub](https://img.shields.io/badge/Damaris-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/damarisfregoso)
 
-[Click To View](https://eye-shop-2024-2da831664c2c.herokuapp.com/category/Eyes)
+[Click To View](https://eye-shop-2024-2da831664c2c.herokuapp.com/)
 
 </div>
 
 <div id="body" align='center'>
 
 ## 🖨 Description 
- Eye Shop is a great place to find all the amazing makeup products.  Ranging in a wide varity of makeup brands.   Get all your favorite goodies here on Eye Shop and leave reviews on your favorite products!
+ Eye Shop is a great place to find amazing makeup products.  Ranging in a wide variety of makeup brands.   Get all your favorite goodies here on Eye Shop!
 
  ## 📸 Screenshots  
   |   Description | Screenshot | 
@@ -64,11 +64,11 @@
 
     3. Once you see some items you like, click the green add button to add the items to your cart. 
 
-    4. Browse to cart, there you can add or remove those certain items.
+    4. Browse to cart, there you can add or remove certain items.
 
     5. Once you love everything in your cart, click the Checkout button.
 
-    6. From there you will be navigated to your previous orders to browse your past googies. 
+    6. From there you will be navigated to your previous orders to browse your past goodies. 
 
 
 </details>
@@ -76,12 +76,17 @@
 ## 🔗 Links
 <details open>
   <summary> Trello Board </summary>
-  <a href="https://trello.com/b/QIRP5B7h/qhttps://trello.com/b/Z6bYejOu/eye-shop"> https://trello.com/b/Z6bYejOu/eye-shop </a>
+  <a href="https://trello.com/b/Z6bYejOu/eye-shop"> https://trello.com/b/Z6bYejOu/eye-shop </a>
 </details>
 
 <details open>
   <summary> Deployed Link (Heroku) </summary>
-  <a href="">  </a>
+  <a href="https://eye-shop-2024-2da831664c2c.herokuapp.com/"> https://eye-shop-2024-2da831664c2c.herokuapp.com/ </a>
 </details>
 
 ## ⏭️ Next Steps
+
+- [ ] Include a pop-up on the welcome page that includes previously purchased items prompting users to order again.
+- [ ] Implement a search bar so users find items more easily.
+- [ ] Allow users to be able to filter items by price.
+- [ ] Allow users to be able to favorite items.
