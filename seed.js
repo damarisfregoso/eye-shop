@@ -102,7 +102,7 @@ const Item = require('./models/item');
       ], 
       category: categories[1], 
       subcategories: 'Glosses',
-      price: 8.00, 
+      price: 40.00, 
       info: 'Nourishing Lip Oil - Intense Gloss - Color-Awakening'
     },
     {

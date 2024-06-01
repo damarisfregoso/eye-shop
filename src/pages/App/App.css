@@ -48,6 +48,12 @@
   margin-top: 5px;
 }
 
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 footer {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: var(--body_color);

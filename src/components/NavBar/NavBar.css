@@ -6,30 +6,29 @@
   margin: 0;
 }
 
-.menu-toggle {
+.NavBar .menu-toggle {
   display: none;
-  background: none;
-  border: none;
-  font-size: 24px;
 }
 
-.menu {
+.NavBar .menu {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
-.menu a {
+.NavBar .menu a {
   margin-right: 10px; /* Adjust margin between links as needed */
   color: var(--body_color);
   text-decoration: none;
 }
 
-.menu a:hover {
+.NavBar .menu a:hover {
   color: var(--active_link_color);
 }
 
 .menu img {
-  height: 40px;
+  height: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .welcome-name {
@@ -37,24 +36,16 @@
   text-decoration: var(--active_link_color) wavy underline;
 }
 
-.menu {
-  transition: max-height 0.3s ease-out;
-  max-height: 0;
-  overflow: hidden;
-}
-
-.menu.open {
-  max-height: 500px; /* Adjust based on the menu content */
-}
-
 @media (max-width: 480px) {
   .NavBar {
-    font-size: 20px;
+    font-size: 10px;
     margin: 0;
     padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .menu {
+  .NavBar .menu {
     display: none;
     flex-direction: column;
     width: 100%;
@@ -65,13 +56,18 @@
     padding: 10px;
     border-top: 1px solid pink;
     border-bottom: 1px solid pink;
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
   }
 
-  .menu.open {
+  .NavBar .menu.open {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    max-height: 500px;
   }
 
   .menu-toggle {

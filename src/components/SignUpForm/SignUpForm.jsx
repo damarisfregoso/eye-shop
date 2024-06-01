@@ -48,9 +48,9 @@ export default class SignUpForm extends Component {
             <input type="email" name="email" id="Email" placeholder="Email" value={this.state.email} onChange={this.handleChange} required />
             <label htmlFor="Password">Password</label>
             <input type="password" name="password" id="Password" placeholder="Password" value={this.state.password} onChange={this.handleChange} required />
-            <label htmlFor="Confirm-Password">Confirm Passowrd</label>
-            <input type="password" name="confirm" id="Confirm-Password" placeholder="Confirm-Password" value={this.state.confirm} onChange={this.handleChange} required />
-            <span><button type="submit" disabled={disable}>SIGN UP</button></span>
+            <label htmlFor="Confirm-Password">Confirm Password</label>
+            <input type="password" name="confirm" id="Confirm-Password" placeholder="Confirm Password" value={this.state.confirm} onChange={this.handleChange} required />
+            <button type="submit" disabled={disable}>SIGN UP</button>
           </form>
         </div>
         <p className="error-message">&nbsp;{this.state.error}</p>

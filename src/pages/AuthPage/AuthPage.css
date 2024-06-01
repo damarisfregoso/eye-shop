@@ -2,3 +2,12 @@
   color: pink;
   font-family: 'DM Sans', sans-serif;
 }
+
+.AuthPage button:hover {
+  background-color: pink;
+  color: black;
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}

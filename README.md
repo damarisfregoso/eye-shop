@@ -7,7 +7,7 @@
 ###### Created by Damaris Fregoso
 [![LinkedIn](https://img.shields.io/badge/Damaris-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/damaris-fregoso/) [![GitHub](https://img.shields.io/badge/Damaris-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/damarisfregoso)
 
-[Click To View]()
+[Click To View](https://eye-shop-2024-2da831664c2c.herokuapp.com/category/Eyes)
 
 </div>
 
@@ -19,7 +19,16 @@
  ## 📸 Screenshots  
   |   Description | Screenshot | 
   |:-------------:| -----------|
-  |<h4></h4> | <img src="">|
+  |<h4>Welcome Page (Dark/Light)</h4> | <img src="https://i.imgur.com/fYct6EY.png" alt="Screenshot of Welcome Page Dark"><img src="https://i.imgur.com/DrvS847.png" alt="Screenshot of Welcome Page Light">|
+  |<h4>Auth Page</h4> | <img src="https://i.imgur.com/yHyK1Ka.png" alt="Screenshot of Login Page"><img src="https://i.imgur.com/WfwNkF4.png" alt="Screenshot of Sign Up Page">|
+  |<h4>Shop Eyes</h4> | <img src="https://i.imgur.com/2B86UXa.png" alt="Screenshot of Category Eye Page">|
+  |<h4>Shop Lips</h4> | <img src="https://i.imgur.com/TqsVLQl.png" alt="Screenshot of Category Lips Page">|
+  |<h4>Shop Blushes</h4> | <img src="https://i.imgur.com/BwYShZB.png" alt="Screenshot of Category Blushes Page">|
+  |<h4>Shop Highlighters</h4> | <img src="https://i.imgur.com/OHfSmiP.png" alt="Screenshot of Category Highlighters Page">|
+  |<h4>Shop Brushes</h4> | <img src="https://i.imgur.com/MfAHHd7.png" alt="Screenshot of Category Brushes Page">|
+  |<h4>Shop Moisturizers</h4> | <img src="https://i.imgur.com/31a11ga.png" alt="Screenshot of Category Moisturizers Page">|
+  |<h4>Cart Page</h4> | <img src="https://i.imgur.com/Jx9dZl6.png" alt="Screenshot of Cart Page">|
+  |<h4>Prev Order Page</h4> | <img src="https://i.imgur.com/8pYOa10.png" alt="Screenshot of Prev Order Page with order details open">|
 
 </div>
 
@@ -47,14 +56,19 @@
   <summary> 📜 Instructions </summary>
   <br>
   
-  <p>  </p>
+  <p> Browsing the collection </p>
 
-    1. 
+    1. Users are welcomed to Eye Shop and given categories to browse.
 
+    2. Select the category you would like to browse and shop!  Or browse them all. 
 
-  <p>  </p>
+    3. Once you see some items you like, click the green add button to add the items to your cart. 
 
-    1. 
+    4. Browse to cart, there you can add or remove those certain items.
+
+    5. Once you love everything in your cart, click the Checkout button.
+
+    6. From there you will be navigated to your previous orders to browse your past googies. 
 
 
 </details>
