@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 15px;
+  font-size: 20px;
   margin: 0;
 }
 
@@ -23,6 +23,7 @@
 
 .NavBar .menu a:hover {
   color: var(--active_link_color);
+  transition: all 0.3s ease-in-out;
 }
 
 .menu img {
@@ -33,7 +34,6 @@
 
 .welcome-name {
   color: var(--active_link_color);
-  text-decoration: var(--active_link_color) wavy underline;
 }
 
 @media (max-width: 480px) {

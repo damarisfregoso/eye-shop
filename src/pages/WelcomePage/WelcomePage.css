@@ -11,7 +11,7 @@
 }
 
 .WelcomePage img {
-  height: 400px;
+  height: 350px;
 }
 
 .Category-Box{
@@ -22,7 +22,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 
-  height: 600px;
+  height: 500px;
   margin: 0 300px;
 }
 
@@ -44,13 +44,15 @@
   text-decoration: none;
 }
 
-.WelcomePage a:hover {
-  color: var(--active_link_color);
-  text-decoration: wavy var(--active_link_color) underline;
+.WelcomePage .Box-2:hover {
+  .productName{
+      color: var(--active_link_color);
+      text-decoration: wavy var(--active_link_color) underline;
+  }
 }
 
 .category {
-  text-decoration: wavy var(--body_color) underline;
+  margin: 10px 0 0 0;
 }
 
 @media (max-width: 480px) {
