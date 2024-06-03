@@ -90,3 +90,4 @@
 - [ ] Implement a search bar so users find items more easily.
 - [ ] Allow users to be able to filter items by price.
 - [ ] Allow users to be able to favorite items.
+- [ ] Implement API to create real life checkout process.

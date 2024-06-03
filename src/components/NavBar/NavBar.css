@@ -36,6 +36,10 @@
   color: var(--active_link_color);
 }
 
+.logout {
+  text-decoration: underline 1px pink;
+}
+
 @media (max-width: 480px) {
   .NavBar {
     font-size: 10px;

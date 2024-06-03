@@ -35,7 +35,7 @@ export default function NavBar({ user, setUser }) {
           <>
             <span className="welcome-name">Welcome, {user.name} </span>
             &nbsp;
-            <Link to="" onClick={() => { handleLogOut(); setMenuOpen(false); }}>
+            <Link to="" className="logout" onClick={() => { handleLogOut(); setMenuOpen(false); }}>
               Log Out?
             </Link>
           </>
