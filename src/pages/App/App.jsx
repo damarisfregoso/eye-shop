@@ -11,6 +11,7 @@ import Footer from '../../components/Footer/Footer';
 import * as itemsAPI from '../../utilities/items-api';
 import CartPage from '../CartPage/CartPage';
 import * as ordersAPI from '../../utilities/orders-api'
+import ScrollToTop from '../../components/ScrollToTop';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -82,6 +83,7 @@ export default function App() {
   return (
     <main className="App">
       <NavBar user={user} setUser={setUser} />
+      <ScrollToTop />
       <Routes>
         {/* Route components in here */}
         <Route path="/" element={<WelcomePage 
