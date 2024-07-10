@@ -10,6 +10,7 @@ export default function LineItem({ lineItem, isPaid, handleChangeQty }) {
         <div className='lineItemsDetail'>
           <h5>{lineItem.item.name}</h5>
           <h6>By {lineItem.item.by}</h6>
+          <div className='checkoutBtns'>
             {!isPaid &&
               <button
                 className="btn-xs"
@@ -25,6 +26,7 @@ export default function LineItem({ lineItem, isPaid, handleChangeQty }) {
                 style={{ color: 'var(--money_green)' }}
               >+</button>
             }
+          </div>
           <h5>${lineItem.extPrice.toFixed(2)}</h5>
         </div>
       </div>

@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two columns with equal width */
   grid-gap: 20px;
+  padding: 0 10px;
 }
 
 .grid1 img {
@@ -25,7 +26,37 @@
 }
 
 @media (max-width: 480px) {
-  /* .grid1 img {
+  .LineItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .grid1 img {
     max-width: 50%;
-  } */
+  }
+
+  .LineItem .grid1 {
+    justify-content: center;
+  }
+
+  .LineItem .grid2 {
+    justify-content: center;
+  }
+
+  .LineItem .checkoutBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-xs {
+    text-align: center;
+  }
+
+  .LineItem h5 {
+    display: flex;
+    justify-content: center;
+  }
 }
