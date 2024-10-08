@@ -79,4 +79,27 @@
     padding: 30px 0 2px 0;
   }
 
+
+}
+
+
+@media (min-width: 481px) and (max-width: 767px){
+  .productName {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+}
+
+@media (min-width: 1200px) and (max-width: 1919px){
+
+}
+@media (min-width: 1920px){
+
 }
